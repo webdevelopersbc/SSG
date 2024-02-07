@@ -65,7 +65,6 @@ import {
   usePlasmicInvalidate
 } from "@plasmicapp/react-web/lib/data-sources";
 
-import Advertorial from "../../Advertorial"; // plasmic-import: F9EYASKGJKLG/component
 import SqueezeVariant2 from "../../SqueezeVariant2"; // plasmic-import: 27kvjbPh0dG1/component
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources";
 
@@ -91,7 +90,6 @@ export const PlasmicPageOverview__ArgProps = new Array<ArgPropType>();
 export type PlasmicPageOverview__OverridesType = {
   root?: Flex__<"div">;
   freeBox?: Flex__<"div">;
-  advertorial2?: Flex__<typeof Advertorial>;
   squeezeVariant2?: Flex__<typeof SqueezeVariant2>;
 };
 
@@ -289,12 +287,6 @@ function PlasmicPageOverview__RenderFunc(props: {
         type: "private",
         variableType: "text",
         initFunc: ({ $props, $state, $queries, $ctx }) => ""
-      },
-      {
-        path: "advertorial2.articleParagraph22",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => ""
       }
     ],
     [$props, $ctx, $refs]
@@ -374,34 +366,6 @@ function PlasmicPageOverview__RenderFunc(props: {
           >
             {(() => {
               try {
-                return $queries.page.data[0].page_type == "advertorial";
-              } catch (e) {
-                if (
-                  e instanceof TypeError ||
-                  e?.plasmicType === "PlasmicUndefinedDataError"
-                ) {
-                  return true;
-                }
-                throw e;
-              }
-            })() ? (
-              <Advertorial
-                data-plasmic-name={"advertorial2"}
-                data-plasmic-override={overrides.advertorial2}
-                articleParagraph22={generateStateValueProp($state, [
-                  "advertorial2",
-                  "articleParagraph22"
-                ])}
-                className={classNames("__wab_instance", sty.advertorial2)}
-                onArticleParagraph2Change={generateStateOnChangeProp($state, [
-                  "advertorial2",
-                  "articleParagraph22"
-                ])}
-                pageId={$ctx.params.slug}
-              />
-            ) : null}
-            {(() => {
-              try {
                 return $queries.page.data[0].page_type == "squeeze";
               } catch (e) {
                 if (
@@ -440,9 +404,8 @@ function PlasmicPageOverview__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "freeBox", "advertorial2", "squeezeVariant2"],
-  freeBox: ["freeBox", "advertorial2", "squeezeVariant2"],
-  advertorial2: ["advertorial2"],
+  root: ["root", "freeBox", "squeezeVariant2"],
+  freeBox: ["freeBox", "squeezeVariant2"],
   squeezeVariant2: ["squeezeVariant2"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -451,7 +414,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   freeBox: "div";
-  advertorial2: typeof Advertorial;
   squeezeVariant2: typeof SqueezeVariant2;
 };
 
@@ -516,7 +478,6 @@ export const PlasmicPageOverview = Object.assign(
   {
     // Helper components rendering sub-elements
     freeBox: makeNodeComponent("freeBox"),
-    advertorial2: makeNodeComponent("advertorial2"),
     squeezeVariant2: makeNodeComponent("squeezeVariant2"),
 
     // Metadata about props expected for PlasmicPageOverview
