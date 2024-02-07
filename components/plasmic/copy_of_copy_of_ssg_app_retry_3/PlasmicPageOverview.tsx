@@ -59,15 +59,6 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
-import {
-  executePlasmicDataOp,
-  usePlasmicDataOp,
-  usePlasmicInvalidate
-} from "@plasmicapp/react-web/lib/data-sources";
-
-import SqueezeVariant2 from "../../SqueezeVariant2"; // plasmic-import: 27kvjbPh0dG1/component
-import { Fetcher } from "@plasmicapp/react-web/lib/data-sources";
-
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
@@ -89,8 +80,8 @@ export const PlasmicPageOverview__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicPageOverview__OverridesType = {
   root?: Flex__<"div">;
-  freeBox?: Flex__<"div">;
-  squeezeVariant2?: Flex__<typeof SqueezeVariant2>;
+  text?: Flex__<"div">;
+  img?: Flex__<typeof PlasmicImg__>;
 };
 
 export interface DefaultPageOverviewProps {}
@@ -126,9 +117,6 @@ function PlasmicPageOverview__RenderFunc(props: {
 
   const currentUser = useCurrentUser?.() || {};
 
-  let [$queries, setDollarQueries] = React.useState<
-    Record<string, ReturnType<typeof usePlasmicDataOp>>
-  >({});
   const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
     () => [
       {
@@ -294,27 +282,9 @@ function PlasmicPageOverview__RenderFunc(props: {
   const $state = useDollarState(stateSpecs, {
     $props,
     $ctx,
-    $queries: $queries,
+    $queries: {},
     $refs
   });
-
-  const new$Queries: Record<string, ReturnType<typeof usePlasmicDataOp>> = {
-    page: usePlasmicDataOp(() => {
-      return {
-        sourceId: "rgeC3gdZPKsM6rWvBzgeeg",
-        opId: "391b54da-0680-4fde-84c5-2516fba92fd5",
-        userArgs: {},
-        cacheKey: `plasmic.$.391b54da-0680-4fde-84c5-2516fba92fd5.$.`,
-        invalidatedKeys: null,
-        roleId: null
-      };
-    })
-  };
-  if (Object.keys(new$Queries).some(k => new$Queries[k] !== $queries[k])) {
-    setDollarQueries(new$Queries);
-
-    $queries = new$Queries;
-  }
 
   return (
     <React.Fragment>
@@ -358,43 +328,35 @@ function PlasmicPageOverview__RenderFunc(props: {
           )}
         >
           <div
-            data-plasmic-name={"freeBox"}
-            data-plasmic-override={overrides.freeBox}
-            className={classNames(projectcss.all, sty.freeBox)}
+            data-plasmic-name={"text"}
+            data-plasmic-override={overrides.text}
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text
+            )}
           >
-            {(() => {
-              try {
-                return $queries.page.data[0].page_type == "squeeze";
-              } catch (e) {
-                if (
-                  e instanceof TypeError ||
-                  e?.plasmicType === "PlasmicUndefinedDataError"
-                ) {
-                  return true;
-                }
-                throw e;
-              }
-            })() ? (
-              <SqueezeVariant2
-                data-plasmic-name={"squeezeVariant2"}
-                data-plasmic-override={overrides.squeezeVariant2}
-                className={classNames("__wab_instance", sty.squeezeVariant2)}
-                pageId={(() => {
-                  try {
-                    return $ctx.params.slug;
-                  } catch (e) {
-                    if (
-                      e instanceof TypeError ||
-                      e?.plasmicType === "PlasmicUndefinedDataError"
-                    ) {
-                      return undefined;
-                    }
-                    throw e;
-                  }
-                })()}
-              />
-            ) : null}
+            {"Enter some text"}
           </div>
+          <PlasmicImg__
+            data-plasmic-name={"img"}
+            data-plasmic-override={overrides.img}
+            alt={""}
+            className={classNames(sty.img)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            loading={"lazy"}
+            src={{
+              src: "/plasmic/copy_of_copy_of_ssg_app_retry_3/images/_92231Ab420C340B6Bd8741330Eb58Ca7Png.png",
+              fullWidth: 306,
+              fullHeight: 56,
+              aspectRatio: undefined
+            }}
+          />
         </div>
       </div>
     </React.Fragment>
@@ -402,17 +364,17 @@ function PlasmicPageOverview__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "freeBox", "squeezeVariant2"],
-  freeBox: ["freeBox", "squeezeVariant2"],
-  squeezeVariant2: ["squeezeVariant2"]
+  root: ["root", "text", "img"],
+  text: ["text"],
+  img: ["img"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  freeBox: "div";
-  squeezeVariant2: typeof SqueezeVariant2;
+  text: "div";
+  img: typeof PlasmicImg__;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -475,8 +437,8 @@ export const PlasmicPageOverview = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    freeBox: makeNodeComponent("freeBox"),
-    squeezeVariant2: makeNodeComponent("squeezeVariant2"),
+    text: makeNodeComponent("text"),
+    img: makeNodeComponent("img"),
 
     // Metadata about props expected for PlasmicPageOverview
     internalVariantProps: PlasmicPageOverview__VariantProps,
