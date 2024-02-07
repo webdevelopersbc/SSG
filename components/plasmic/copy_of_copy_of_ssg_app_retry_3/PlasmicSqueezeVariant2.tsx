@@ -76,7 +76,6 @@ import { inputHelpers as AntdInput_Helpers } from "@plasmicpkgs/antd5/skinny/reg
 import { AntdButton } from "@plasmicpkgs/antd5/skinny/registerButton";
 import TextInput2 from "../../TextInput"; // plasmic-import: 3r4TxCxZZuIK5/component
 import Button from "../../Button"; // plasmic-import: VGxgH9M5y5qbv/component
-import { Embed } from "@plasmicpkgs/plasmic-basic-components";
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources";
 
 import { useScreenVariants as useScreenVariants_1V0TfIi4OQxU } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 1v0TFIi4oQxU/globalVariant
@@ -91,9 +90,6 @@ import sty from "./PlasmicSqueezeVariant2.module.css"; // plasmic-import: 27kvjb
 
 import SearchsvgIcon from "../legacy_feed_page_designs/icons/PlasmicIcon__Searchsvg"; // plasmic-import: CRyUolhDoWvR1TU/icon
 import ChecksvgIcon from "../legacy_feed_page_designs/icons/PlasmicIcon__Checksvg"; // plasmic-import: JKXZQCGXOZJezuA/icon
-import VectorIcon from "../legacy_feed_page_designs/icons/PlasmicIcon__Vector"; // plasmic-import: 0VaJSqGZoQorJK1/icon
-import Vector2Icon from "../legacy_feed_page_designs/icons/PlasmicIcon__Vector2"; // plasmic-import: _YkWarl3TTR4_3w/icon
-import GroupIcon from "../legacy_feed_page_designs/icons/PlasmicIcon__Group"; // plasmic-import: 6rb7Dsdqa0siEyW/icon
 
 createPlasmicElementProxy;
 
@@ -116,6 +112,7 @@ export const PlasmicSqueezeVariant2__ArgProps = new Array<ArgPropType>(
 export type PlasmicSqueezeVariant2__OverridesType = {
   root?: Flex__<"div">;
   desktop?: Flex__<"div">;
+  columns?: Flex__<"div">;
   editableLogoLogo?: Flex__<typeof Editable>;
   logo?: Flex__<typeof PlasmicImg__>;
   editImage53?: Flex__<typeof TextInput>;
@@ -129,8 +126,10 @@ export type PlasmicSqueezeVariant2__OverridesType = {
   text3?: Flex__<"div">;
   editText3R?: Flex__<typeof TextInput>;
   form?: Flex__<typeof FormWrapper>;
+  formField?: Flex__<typeof FormItemWrapper>;
   input?: Flex__<typeof AntdInput>;
   input2?: Flex__<typeof AntdInput>;
+  button?: Flex__<typeof AntdButton>;
   squeezeC1Cta?: Flex__<"div">;
   text4?: Flex__<typeof TextInput2>;
   text5?: Flex__<typeof TextInput2>;
@@ -185,108 +184,6 @@ export type PlasmicSqueezeVariant2__OverridesType = {
   editText162?: Flex__<typeof TextInput>;
   text17?: Flex__<"div">;
   editText172?: Flex__<typeof TextInput>;
-  mobile?: Flex__<"div">;
-  logo3?: Flex__<typeof PlasmicImg__>;
-  editableLogoLogo2?: Flex__<typeof Editable>;
-  logo4?: Flex__<typeof PlasmicImg__>;
-  editImage54?: Flex__<typeof TextInput>;
-  squeezeC2Thumbnail2?: Flex__<typeof PlasmicImg__>;
-  squeezeC2H13?: Flex__<"div">;
-  squeezeC2H14?: Flex__<"div">;
-  iconValue4?: Flex__<"div">;
-  squeezeC2Icon12?: Flex__<typeof PlasmicImg__>;
-  squeezeC2Icon1Value12?: Flex__<"div">;
-  iconValue5?: Flex__<"div">;
-  squeezeC2Icon22?: Flex__<typeof PlasmicImg__>;
-  squeezeC2Icon1Value22?: Flex__<"div">;
-  iconValue6?: Flex__<"div">;
-  squeezeC2Icon32?: Flex__<typeof PlasmicImg__>;
-  squeezeC2Icon1Value32?: Flex__<"div">;
-  squeezeC2CtaH12?: Flex__<"div">;
-  squeezeC2CtaH22?: Flex__<"div">;
-  watchers2?: Flex__<"div">;
-  squeezeC2Proof2?: Flex__<"div">;
-  squeezeC2OfferH12?: Flex__<"div">;
-  squeezeC2OfferThumbnail2?: Flex__<typeof PlasmicImg__>;
-  squeezeC2ValueH12?: Flex__<"div">;
-  squeezeC2ValueH22?: Flex__<"div">;
-  squeezeC2ValueH32?: Flex__<"div">;
-  logo2?: Flex__<typeof PlasmicImg__>;
-  squeezeNav2?: Flex__<"div">;
-  squeezeC1H12?: Flex__<"div">;
-  squeezeC1H22?: Flex__<"div">;
-  form2?: Flex__<typeof FormWrapper>;
-  input3?: Flex__<typeof AntdInput>;
-  squeezeC1Field12?: Flex__<"div">;
-  input4?: Flex__<typeof AntdInput>;
-  squeezeC1Field22?: Flex__<"div">;
-  squeezeC1Cta2?: Flex__<"div">;
-  textInput3?: Flex__<typeof TextInput2>;
-  textInput4?: Flex__<typeof TextInput2>;
-  squeezeC1Disclaimer2?: Flex__<"div">;
-  discoverbeautyfixmedspacomByHtmltodesignFreeVersion24042023190333Gmt4?: Flex__<"div">;
-  divlpPomRoot?: Flex__<"div">;
-  divlpPomBlock11?: Flex__<"div">;
-  divlpPomBlock21?: Flex__<"div">;
-  divlpPositionedContent?: Flex__<"div">;
-  divlpPomBox32?: Flex__<"div">;
-  divlpPomForm19?: Flex__<"div">;
-  inputfirstname?: Flex__<"div">;
-  divplaceholder?: Flex__<"div">;
-  yourFirstName?: Flex__<"div">;
-  inputlastname?: Flex__<"div">;
-  divplaceholder2?: Flex__<"div">;
-  yourLastName?: Flex__<"div">;
-  inputemail?: Flex__<"div">;
-  divplaceholder3?: Flex__<"div">;
-  yourEmailAddress?: Flex__<"div">;
-  inputphone?: Flex__<"div">;
-  divplaceholder4?: Flex__<"div">;
-  yourPhoneNumber?: Flex__<"div">;
-  divcontainerQualification?: Flex__<"div">;
-  yourQualification?: Flex__<"div">;
-  selectqualification?: Flex__<"div">;
-  div?: Flex__<"div">;
-  nurseRnOrNp?: Flex__<"div">;
-  buttonlpPomButton20?: Flex__<"div">;
-  _continue?: Flex__<"div">;
-  divlpPomBox26?: Flex__<"div">;
-  divlpPomImageContainer?: Flex__<"div">;
-  _6D1D5E84CheckoutTrainingCenterPart1110El04G000000000000028Png?: Flex__<"div">;
-  divlpPomImageContainer2?: Flex__<"div">;
-  c510588BTrainingCenterGifPreview2Gif?: Flex__<"div">;
-  divlpPomBox46?: Flex__<"div">;
-  divlpPomImageContainer3?: Flex__<"div">;
-  d33EfddcPinkChecksvg?: Flex__<"div">;
-  d33EfddcPinkChecksvg2?: Flex__<"div">;
-  learnFacialAnatomyBotulinumToxinScience?: Flex__<"div">;
-  divlpPomBox52?: Flex__<"div">;
-  divlpPomImageContainer4?: Flex__<"div">;
-  d33EfddcPinkChecksvg3?: Flex__<"div">;
-  d33EfddcPinkChecksvg4?: Flex__<"div">;
-  smallClassSizeWithDedicated11Support?: Flex__<"div">;
-  divlpPomBox55?: Flex__<"div">;
-  divlpPomImageContainer5?: Flex__<"div">;
-  d33EfddcPinkChecksvg5?: Flex__<"div">;
-  d33EfddcPinkChecksvg6?: Flex__<"div">;
-  strong?: Flex__<"div">;
-  divlpPomImageContainer6?: Flex__<"div">;
-  _3628940ACheckoutTrainingCenterPart210El08G000000000000028Png?: Flex__<"div">;
-  divlpPomImageContainer7?: Flex__<"div">;
-  c38C71DdBeautyfixLogoFullWht105S00V000000000000028Png?: Flex__<"div">;
-  getPricingDetails?: Flex__<"div">;
-  divlpPomImageContainer8?: Flex__<"div">;
-  _046F157ALogo250X104X01P04X01L000002028Png?: Flex__<"div">;
-  span?: Flex__<"div">;
-  submitToRequestAdditionalInformation?: Flex__<"div">;
-  divlpPomBox33?: Flex__<"div">;
-  p?: Flex__<"div">;
-  iAgreeToReceiveRecurringAutomatedMarketingTextMessagesEg?: Flex__<"div">;
-  cartRemindersAtThePhoneNumberProvidedConsentIsNotA?: Flex__<"div">;
-  conditionToPurchaseMsgDataRatesMayApplyMsgFrequency?: Flex__<"div">;
-  variesReplyHelpForHelpAndStopToCancelViewOurPrivacy?: Flex__<"div">;
-  policyAndTermsOfService?: Flex__<"div">;
-  embedHtml?: Flex__<typeof Embed>;
 };
 
 export interface DefaultSqueezeVariant2Props {
@@ -366,33 +263,6 @@ function PlasmicSqueezeVariant2__RenderFunc(props: {
         onMutate: generateOnMutateForSpec("value", AntdInput_Helpers)
       },
       {
-        path: "form2.value",
-        type: "private",
-        variableType: "object",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined,
-
-        refName: "form2",
-        onMutate: generateOnMutateForSpec("value", FormWrapper_Helpers)
-      },
-      {
-        path: "input3.value",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) =>
-          hasVariant(globalVariants, "screen", "mobileOnly") ? `` : undefined,
-
-        onMutate: generateOnMutateForSpec("value", AntdInput_Helpers)
-      },
-      {
-        path: "input4.value",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) =>
-          hasVariant(globalVariants, "screen", "mobileOnly") ? `` : undefined,
-
-        onMutate: generateOnMutateForSpec("value", AntdInput_Helpers)
-      },
-      {
         path: "text4.value",
         type: "private",
         variableType: "text",
@@ -405,33 +275,12 @@ function PlasmicSqueezeVariant2__RenderFunc(props: {
         initFunc: ({ $props, $state, $queries, $ctx }) => ""
       },
       {
-        path: "textInput3.value",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => ""
-      },
-      {
-        path: "textInput4.value",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => ""
-      },
-      {
         path: "form.isSubmitting",
         type: "private",
         variableType: "boolean",
         initFunc: ({ $props, $state, $queries, $ctx }) => false,
 
         refName: "form",
-        onMutate: generateOnMutateForSpec("isSubmitting", FormWrapper_Helpers)
-      },
-      {
-        path: "form2.isSubmitting",
-        type: "private",
-        variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false,
-
-        refName: "form2",
         onMutate: generateOnMutateForSpec("isSubmitting", FormWrapper_Helpers)
       },
       {
@@ -808,12 +657,6 @@ function PlasmicSqueezeVariant2__RenderFunc(props: {
         type: "private",
         variableType: "text",
         initFunc: ({ $props, $state, $queries, $ctx }) => ""
-      },
-      {
-        path: "editImage54.value",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => ""
       }
     ],
     [$props, $ctx, $refs]
@@ -830,24 +673,20 @@ function PlasmicSqueezeVariant2__RenderFunc(props: {
   const new$Queries: Record<string, ReturnType<typeof usePlasmicDataOp>> = {
     pages: usePlasmicDataOp(() => {
       return {
-        sourceId: "g2kPPaDE2d7MrKWxSfsPF6",
-        opId: "a4fdb54e-9715-4381-88af-88d507566ab0",
-        userArgs: {
-          filters: [$props.pageId]
-        },
-        cacheKey: `plasmic.$.a4fdb54e-9715-4381-88af-88d507566ab0.$.`,
+        sourceId: "rgeC3gdZPKsM6rWvBzgeeg",
+        opId: "2fb52e52-9375-4119-8420-26d070d9ad75",
+        userArgs: {},
+        cacheKey: `plasmic.$.2fb52e52-9375-4119-8420-26d070d9ad75.$.`,
         invalidatedKeys: null,
         roleId: null
       };
     }),
     cms: usePlasmicDataOp(() => {
       return {
-        sourceId: "g2kPPaDE2d7MrKWxSfsPF6",
-        opId: "dc8656fa-372b-4525-973c-acf51c19387f",
-        userArgs: {
-          filters: [$queries.pages.data[0].cms]
-        },
-        cacheKey: `plasmic.$.dc8656fa-372b-4525-973c-acf51c19387f.$.`,
+        sourceId: "rgeC3gdZPKsM6rWvBzgeeg",
+        opId: "c17c8aed-33b9-4b22-a7f3-6b386c3bac2d",
+        userArgs: {},
+        cacheKey: `plasmic.$.c17c8aed-33b9-4b22-a7f3-6b386c3bac2d.$.`,
         invalidatedKeys: null,
         roleId: null
       };
@@ -886,7 +725,11 @@ function PlasmicSqueezeVariant2__RenderFunc(props: {
         data-plasmic-override={overrides.desktop}
         className={classNames(projectcss.all, sty.desktop)}
       >
-        <div className={classNames(projectcss.all, sty.columns__qeKcz)}>
+        <div
+          data-plasmic-name={"columns"}
+          data-plasmic-override={overrides.columns}
+          className={classNames(projectcss.all, sty.columns)}
+        >
           <div className={classNames(projectcss.all, sty.column___8Etr3)}>
             <Editable
               data-plasmic-name={"editableLogoLogo"}
@@ -1636,10 +1479,9 @@ function PlasmicSqueezeVariant2__RenderFunc(props: {
                     {...child$Props}
                   >
                     <FormItemWrapper
-                      className={classNames(
-                        "__wab_instance",
-                        sty.formField__e8PoK
-                      )}
+                      data-plasmic-name={"formField"}
+                      data-plasmic-override={overrides.formField}
+                      className={classNames("__wab_instance", sty.formField)}
                       label={
                         <div
                           className={classNames(
@@ -1733,10 +1575,9 @@ function PlasmicSqueezeVariant2__RenderFunc(props: {
                       })()}
                     </FormItemWrapper>
                     <AntdButton
-                      className={classNames(
-                        "__wab_instance",
-                        sty.button___2Bbwe
-                      )}
+                      data-plasmic-name={"button"}
+                      data-plasmic-override={overrides.button}
+                      className={classNames("__wab_instance", sty.button)}
                       icon={null}
                     >
                       <div
@@ -4018,1730 +3859,6 @@ function PlasmicSqueezeVariant2__RenderFunc(props: {
           </div>
         </div>
       </div>
-      {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : false) ? (
-        <div
-          data-plasmic-name={"mobile"}
-          data-plasmic-override={overrides.mobile}
-          className={classNames(projectcss.all, sty.mobile)}
-        >
-          <div className={classNames(projectcss.all, sty.freeBox__oLpId)}>
-            <PlasmicImg__
-              data-plasmic-name={"logo3"}
-              data-plasmic-override={overrides.logo3}
-              alt={""}
-              className={classNames(sty.logo3)}
-              displayHeight={"auto"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"175px"}
-              loading={"eager"}
-              src={(() => {
-                try {
-                  return $queries.cms.data[0].logo;
-                } catch (e) {
-                  if (
-                    e instanceof TypeError ||
-                    e?.plasmicType === "PlasmicUndefinedDataError"
-                  ) {
-                    return undefined;
-                  }
-                  throw e;
-                }
-              })()}
-            />
-
-            <Editable
-              data-plasmic-name={"editableLogoLogo2"}
-              data-plasmic-override={overrides.editableLogoLogo2}
-              className={classNames("__wab_instance", sty.editableLogoLogo2)}
-              edit2={
-                <TextInput
-                  data-plasmic-name={"editImage54"}
-                  data-plasmic-override={overrides.editImage54}
-                  className={classNames("__wab_instance", sty.editImage54)}
-                  endIcon={null}
-                  onChange={async (...eventArgs: any) => {
-                    ((...eventArgs) => {
-                      generateStateOnChangeProp($state, [
-                        "editImage54",
-                        "value"
-                      ])((e => e.target?.value).apply(null, eventArgs));
-                    }).apply(null, eventArgs);
-                    (async event => {
-                      const $steps = {};
-
-                      $steps["updateEditImage5"] = true
-                        ? (() => {
-                            const actionArgs = {
-                              variable: {
-                                objRoot: $state,
-                                variablePath: ["editImage5"]
-                              },
-                              operation: 0,
-                              value: $state.editImage5R.value
-                            };
-                            return (({
-                              variable,
-                              value,
-                              startIndex,
-                              deleteCount
-                            }) => {
-                              if (!variable) {
-                                return;
-                              }
-                              const { objRoot, variablePath } = variable;
-
-                              $stateSet(objRoot, variablePath, value);
-                              return value;
-                            })?.apply(null, [actionArgs]);
-                          })()
-                        : undefined;
-                      if (
-                        $steps["updateEditImage5"] != null &&
-                        typeof $steps["updateEditImage5"] === "object" &&
-                        typeof $steps["updateEditImage5"].then === "function"
-                      ) {
-                        $steps["updateEditImage5"] = await $steps[
-                          "updateEditImage5"
-                        ];
-                      }
-
-                      $steps["postgresUpdateById"] = true
-                        ? (() => {
-                            const actionArgs = {
-                              dataOp: {
-                                sourceId: "g2kPPaDE2d7MrKWxSfsPF6",
-                                opId: "cdca0ed9-2c85-4b29-a87b-609b5f92dcd8",
-                                userArgs: {
-                                  keys: [$queries.pages.data[0].cms],
-                                  variables: [$state.editImage5R.value]
-                                },
-                                cacheKey: null,
-                                invalidatedKeys: ["plasmic_refresh_all"],
-                                roleId: null
-                              }
-                            };
-                            return (async ({ dataOp, continueOnError }) => {
-                              try {
-                                const response = await executePlasmicDataOp(
-                                  dataOp,
-                                  {
-                                    userAuthToken:
-                                      dataSourcesCtx?.userAuthToken,
-                                    user: dataSourcesCtx?.user
-                                  }
-                                );
-                                await plasmicInvalidate(dataOp.invalidatedKeys);
-                                return response;
-                              } catch (e) {
-                                if (!continueOnError) {
-                                  throw e;
-                                }
-                                return e;
-                              }
-                            })?.apply(null, [actionArgs]);
-                          })()
-                        : undefined;
-                      if (
-                        $steps["postgresUpdateById"] != null &&
-                        typeof $steps["postgresUpdateById"] === "object" &&
-                        typeof $steps["postgresUpdateById"].then === "function"
-                      ) {
-                        $steps["postgresUpdateById"] = await $steps[
-                          "postgresUpdateById"
-                        ];
-                      }
-                    }).apply(null, eventArgs);
-                  }}
-                  placeholder={(() => {
-                    try {
-                      return $state.editImage5 || $queries?.cms?.data[0]?.logo;
-                    } catch (e) {
-                      if (
-                        e instanceof TypeError ||
-                        e?.plasmicType === "PlasmicUndefinedDataError"
-                      ) {
-                        return undefined;
-                      }
-                      throw e;
-                    }
-                  })()}
-                  startIcon={null}
-                  value={
-                    generateStateValueProp($state, ["editImage54", "value"]) ??
-                    ""
-                  }
-                />
-              }
-            >
-              <PlasmicImg__
-                data-plasmic-name={"logo4"}
-                data-plasmic-override={overrides.logo4}
-                alt={""}
-                className={classNames(sty.logo4)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"175px"}
-                loading={"eager"}
-                src={(() => {
-                  try {
-                    return $state.editImage5 || $queries?.cms?.data[0]?.logo;
-                  } catch (e) {
-                    if (
-                      e instanceof TypeError ||
-                      e?.plasmicType === "PlasmicUndefinedDataError"
-                    ) {
-                      return undefined;
-                    }
-                    throw e;
-                  }
-                })()}
-              />
-            </Editable>
-          </div>
-          <div className={classNames(projectcss.all, sty.columns__clQll)}>
-            <div className={classNames(projectcss.all, sty.column__tmCl9)}>
-              <div className={classNames(projectcss.all, sty.freeBox__nwM47)}>
-                <PlasmicImg__
-                  data-plasmic-name={"squeezeC2Thumbnail2"}
-                  data-plasmic-override={overrides.squeezeC2Thumbnail2}
-                  alt={""}
-                  className={classNames(sty.squeezeC2Thumbnail2)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"125px"}
-                  loading={"eager"}
-                  src={(() => {
-                    try {
-                      return (
-                        $state.editImage1 || $queries?.cms?.data[0]?.image_1
-                      );
-                    } catch (e) {
-                      if (
-                        e instanceof TypeError ||
-                        e?.plasmicType === "PlasmicUndefinedDataError"
-                      ) {
-                        return undefined;
-                      }
-                      throw e;
-                    }
-                  })()}
-                />
-
-                <div className={classNames(projectcss.all, sty.freeBox__axls8)}>
-                  <div
-                    data-plasmic-name={"squeezeC2H13"}
-                    data-plasmic-override={overrides.squeezeC2H13}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.squeezeC2H13
-                    )}
-                  >
-                    <React.Fragment>
-                      {$state.editText7 || $queries?.cms?.data[0]?.text_7}
-                    </React.Fragment>
-                  </div>
-                  <div
-                    data-plasmic-name={"squeezeC2H14"}
-                    data-plasmic-override={overrides.squeezeC2H14}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.squeezeC2H14
-                    )}
-                  >
-                    <React.Fragment>
-                      {$state.editText8 || $queries?.cms?.data[0]?.text_8}
-                    </React.Fragment>
-                  </div>
-                </div>
-              </div>
-              <div
-                className={classNames(projectcss.all, sty.freeBox___71Eeo)}
-              />
-
-              <div
-                data-plasmic-name={"iconValue4"}
-                data-plasmic-override={overrides.iconValue4}
-                className={classNames(projectcss.all, sty.iconValue4)}
-              >
-                <div className={classNames(projectcss.all, sty.freeBox__fD05)}>
-                  <PlasmicImg__
-                    data-plasmic-name={"squeezeC2Icon12"}
-                    data-plasmic-override={overrides.squeezeC2Icon12}
-                    alt={""}
-                    className={classNames(sty.squeezeC2Icon12)}
-                    displayHeight={"40px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"40px"}
-                    loading={"eager"}
-                    src={(() => {
-                      try {
-                        return $ctx.fetchDyanamicData.records[0].fields
-                          .squeeze_c2_icon1[0].url;
-                      } catch (e) {
-                        if (
-                          e instanceof TypeError ||
-                          e?.plasmicType === "PlasmicUndefinedDataError"
-                        ) {
-                          return undefined;
-                        }
-                        throw e;
-                      }
-                    })()}
-                  />
-
-                  <div
-                    data-plasmic-name={"squeezeC2Icon1Value12"}
-                    data-plasmic-override={overrides.squeezeC2Icon1Value12}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.squeezeC2Icon1Value12
-                    )}
-                  >
-                    <React.Fragment>
-                      {$state.editText9 || $queries?.cms?.data[0]?.text_9}
-                    </React.Fragment>
-                  </div>
-                </div>
-              </div>
-              <div
-                data-plasmic-name={"iconValue5"}
-                data-plasmic-override={overrides.iconValue5}
-                className={classNames(projectcss.all, sty.iconValue5)}
-              >
-                <div className={classNames(projectcss.all, sty.freeBox__ez62A)}>
-                  <PlasmicImg__
-                    data-plasmic-name={"squeezeC2Icon22"}
-                    data-plasmic-override={overrides.squeezeC2Icon22}
-                    alt={""}
-                    className={classNames(sty.squeezeC2Icon22)}
-                    displayHeight={"40px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"40px"}
-                    loading={"eager"}
-                    src={(() => {
-                      try {
-                        return $ctx.fetchDyanamicData.records[0].fields
-                          .squeeze_c2_icon2[0].url;
-                      } catch (e) {
-                        if (
-                          e instanceof TypeError ||
-                          e?.plasmicType === "PlasmicUndefinedDataError"
-                        ) {
-                          return undefined;
-                        }
-                        throw e;
-                      }
-                    })()}
-                  />
-
-                  <div
-                    data-plasmic-name={"squeezeC2Icon1Value22"}
-                    data-plasmic-override={overrides.squeezeC2Icon1Value22}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.squeezeC2Icon1Value22
-                    )}
-                  >
-                    <React.Fragment>
-                      {$state.editText10 || $queries?.cms?.data[0]?.text_10}
-                    </React.Fragment>
-                  </div>
-                </div>
-              </div>
-              <div
-                data-plasmic-name={"iconValue6"}
-                data-plasmic-override={overrides.iconValue6}
-                className={classNames(projectcss.all, sty.iconValue6)}
-              >
-                <div className={classNames(projectcss.all, sty.freeBox__a43MB)}>
-                  <PlasmicImg__
-                    data-plasmic-name={"squeezeC2Icon32"}
-                    data-plasmic-override={overrides.squeezeC2Icon32}
-                    alt={""}
-                    className={classNames(sty.squeezeC2Icon32)}
-                    displayHeight={"40px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"40px"}
-                    loading={"eager"}
-                    src={(() => {
-                      try {
-                        return $ctx.fetchDyanamicData.records[0].fields
-                          .squeeze_c2_icon3[0].url;
-                      } catch (e) {
-                        if (
-                          e instanceof TypeError ||
-                          e?.plasmicType === "PlasmicUndefinedDataError"
-                        ) {
-                          return undefined;
-                        }
-                        throw e;
-                      }
-                    })()}
-                  />
-
-                  <div
-                    data-plasmic-name={"squeezeC2Icon1Value32"}
-                    data-plasmic-override={overrides.squeezeC2Icon1Value32}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.squeezeC2Icon1Value32
-                    )}
-                  >
-                    <React.Fragment>
-                      {$state.editText11 || $queries?.cms?.data[0]?.text_11}
-                    </React.Fragment>
-                  </div>
-                </div>
-              </div>
-              <div className={classNames(projectcss.all, sty.freeBox__i7IMc)} />
-
-              <div className={classNames(projectcss.all, sty.freeBox__t5UF)}>
-                <div
-                  data-plasmic-name={"squeezeC2CtaH12"}
-                  data-plasmic-override={overrides.squeezeC2CtaH12}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.squeezeC2CtaH12
-                  )}
-                >
-                  <React.Fragment>
-                    {(() => {
-                      try {
-                        return $ctx.fetchDyanamicData.records[0].fields
-                          .squeeze_c2_cta_h1;
-                      } catch (e) {
-                        if (
-                          e instanceof TypeError ||
-                          e?.plasmicType === "PlasmicUndefinedDataError"
-                        ) {
-                          return "CTA Headline 1";
-                        }
-                        throw e;
-                      }
-                    })()}
-                  </React.Fragment>
-                </div>
-                <div
-                  data-plasmic-name={"squeezeC2CtaH22"}
-                  data-plasmic-override={overrides.squeezeC2CtaH22}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.squeezeC2CtaH22
-                  )}
-                >
-                  <React.Fragment>
-                    {(() => {
-                      try {
-                        return $ctx.fetchDyanamicData.records[0].fields
-                          .squeeze_c2_cta_h2;
-                      } catch (e) {
-                        if (
-                          e instanceof TypeError ||
-                          e?.plasmicType === "PlasmicUndefinedDataError"
-                        ) {
-                          return "CTA Headline 2";
-                        }
-                        throw e;
-                      }
-                    })()}
-                  </React.Fragment>
-                </div>
-              </div>
-              <div className={classNames(projectcss.all, sty.freeBox__yZcBn)} />
-
-              <div
-                data-plasmic-name={"watchers2"}
-                data-plasmic-override={overrides.watchers2}
-                className={classNames(projectcss.all, sty.watchers2)}
-              >
-                <div
-                  data-plasmic-name={"squeezeC2Proof2"}
-                  data-plasmic-override={overrides.squeezeC2Proof2}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.squeezeC2Proof2
-                  )}
-                >
-                  {"Enter some text"}
-                </div>
-              </div>
-              <div className={classNames(projectcss.all, sty.freeBox__s20Pl)}>
-                <div className={classNames(projectcss.all, sty.freeBox__kxk7B)}>
-                  <div
-                    data-plasmic-name={"squeezeC2OfferH12"}
-                    data-plasmic-override={overrides.squeezeC2OfferH12}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.squeezeC2OfferH12
-                    )}
-                  >
-                    {"Enter some text:"}
-                  </div>
-                  <PlasmicImg__
-                    data-plasmic-name={"squeezeC2OfferThumbnail2"}
-                    data-plasmic-override={overrides.squeezeC2OfferThumbnail2}
-                    alt={""}
-                    className={classNames(sty.squeezeC2OfferThumbnail2)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"50px"}
-                    displayMaxWidth={"none"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"auto"}
-                    loading={"eager"}
-                    src={undefined}
-                  />
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__mxGQt
-                    )}
-                  >
-                    {"Enter some text"}
-                  </div>
-                </div>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___0X4Jq)}
-                >
-                  <div
-                    data-plasmic-name={"squeezeC2ValueH12"}
-                    data-plasmic-override={overrides.squeezeC2ValueH12}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.squeezeC2ValueH12
-                    )}
-                  >
-                    {"Enter some text"}
-                  </div>
-                  <div
-                    data-plasmic-name={"squeezeC2ValueH22"}
-                    data-plasmic-override={overrides.squeezeC2ValueH22}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.squeezeC2ValueH22
-                    )}
-                  >
-                    {"Enter some text"}
-                  </div>
-                  <div
-                    data-plasmic-name={"squeezeC2ValueH32"}
-                    data-plasmic-override={overrides.squeezeC2ValueH32}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.squeezeC2ValueH32
-                    )}
-                  >
-                    {"Enter some text"}
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={classNames(projectcss.all, sty.column___6NMjq)}>
-              <PlasmicImg__
-                data-plasmic-name={"logo2"}
-                data-plasmic-override={overrides.logo2}
-                alt={""}
-                className={classNames(sty.logo2)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"auto"}
-                loading={"lazy"}
-                src={{
-                  src: "/plasmic/legacy_feed_page_designs/images/_046F157ALogo250X104X01P04X01L000002028Png.png",
-                  fullWidth: 177,
-                  fullHeight: 57,
-                  aspectRatio: undefined
-                }}
-              />
-
-              <div
-                data-plasmic-name={"squeezeNav2"}
-                data-plasmic-override={overrides.squeezeNav2}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.squeezeNav2
-                )}
-              >
-                <React.Fragment>
-                  {(() => {
-                    try {
-                      return $ctx.fetchDyanamicData.records[0].fields
-                        .squeeze_c1_nav;
-                    } catch (e) {
-                      if (
-                        e instanceof TypeError ||
-                        e?.plasmicType === "PlasmicUndefinedDataError"
-                      ) {
-                        return undefined;
-                      }
-                      throw e;
-                    }
-                  })()}
-                </React.Fragment>
-              </div>
-              <div
-                data-plasmic-name={"squeezeC1H12"}
-                data-plasmic-override={overrides.squeezeC1H12}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.squeezeC1H12
-                )}
-              >
-                <React.Fragment>
-                  {$state.editText2 || $queries?.cms?.data[0]?.text_2}
-                </React.Fragment>
-              </div>
-              <div
-                data-plasmic-name={"squeezeC1H22"}
-                data-plasmic-override={overrides.squeezeC1H22}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.squeezeC1H22
-                )}
-              >
-                <React.Fragment>
-                  {$state.editText1 || $queries?.cms?.data[0]?.text_1}
-                </React.Fragment>
-              </div>
-              <form
-                action={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "https://hook.us1.make.com/5mordka6hk6nytd9doqnbe6kbf4r3drk"
-                    : undefined
-                }
-                className={classNames(projectcss.all, sty.form__nPgS5)}
-                method={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "post"
-                    : undefined
-                }
-              >
-                {(() => {
-                  const child$Props = {
-                    className: classNames("__wab_instance", sty.form2),
-                    extendedOnValuesChange:
-                      generateStateOnChangePropForCodeComponents(
-                        $state,
-                        "value",
-                        ["form2", "value"],
-                        FormWrapper_Helpers
-                      ),
-                    formItems: [
-                      { label: "Name", name: "name", inputType: "Text" },
-                      {
-                        label: "Message",
-                        name: "message",
-                        inputType: "Text Area"
-                      }
-                    ],
-                    labelCol: { span: 8, horizontalOnly: true },
-                    layout: "vertical",
-                    mode: undefined,
-                    onIsSubmittingChange:
-                      generateStateOnChangePropForCodeComponents(
-                        $state,
-                        "isSubmitting",
-                        ["form2", "isSubmitting"],
-                        FormWrapper_Helpers
-                      ),
-                    ref: ref => {
-                      $refs["form2"] = ref;
-                    },
-                    wrapperCol: { span: 16, horizontalOnly: true }
-                  };
-                  initializeCodeComponentStates(
-                    $state,
-                    [
-                      {
-                        name: "value",
-                        plasmicStateName: "form2.value"
-                      },
-                      {
-                        name: "isSubmitting",
-                        plasmicStateName: "form2.isSubmitting"
-                      }
-                    ],
-                    [],
-                    FormWrapper_Helpers ?? {},
-                    child$Props
-                  );
-
-                  return (
-                    <FormWrapper
-                      data-plasmic-name={"form2"}
-                      data-plasmic-override={overrides.form2}
-                      {...child$Props}
-                    >
-                      <FormItemWrapper
-                        className={classNames(
-                          "__wab_instance",
-                          sty.formField__vtSyQ
-                        )}
-                        label={
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__yz70
-                            )}
-                          >
-                            {"Label"}
-                          </div>
-                        }
-                        name={"name"}
-                      >
-                        {(() => {
-                          const child$Props = {
-                            addonAfter: null,
-                            addonBefore: null,
-                            className: classNames("__wab_instance", sty.input3),
-                            onChange:
-                              generateStateOnChangePropForCodeComponents(
-                                $state,
-                                "value",
-                                ["input3", "value"],
-                                AntdInput_Helpers
-                              ),
-                            prefix: (
-                              <div
-                                data-plasmic-name={"squeezeC1Field12"}
-                                data-plasmic-override={
-                                  overrides.squeezeC1Field12
-                                }
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.squeezeC1Field12
-                                )}
-                              >
-                                <React.Fragment>
-                                  {(() => {
-                                    try {
-                                      return $ctx.fetchDyanamicData.records[0]
-                                        .fields.squeeze_c1_field1;
-                                    } catch (e) {
-                                      if (
-                                        e instanceof TypeError ||
-                                        e?.plasmicType ===
-                                          "PlasmicUndefinedDataError"
-                                      ) {
-                                        return "👋  Your First Name";
-                                      }
-                                      throw e;
-                                    }
-                                  })()}
-                                </React.Fragment>
-                              </div>
-                            ),
-                            suffix: null,
-                            value: generateStateValueProp($state, [
-                              "input3",
-                              "value"
-                            ])
-                          };
-                          initializeCodeComponentStates(
-                            $state,
-                            [
-                              {
-                                name: "value",
-                                plasmicStateName: "input3.value"
-                              }
-                            ],
-                            [],
-                            AntdInput_Helpers ?? {},
-                            child$Props
-                          );
-
-                          return (
-                            <AntdInput
-                              data-plasmic-name={"input3"}
-                              data-plasmic-override={overrides.input3}
-                              {...child$Props}
-                            />
-                          );
-                        })()}
-                        {(() => {
-                          const child$Props = {
-                            addonAfter: null,
-                            addonBefore: null,
-                            className: classNames("__wab_instance", sty.input4),
-                            onChange:
-                              generateStateOnChangePropForCodeComponents(
-                                $state,
-                                "value",
-                                ["input4", "value"],
-                                AntdInput_Helpers
-                              ),
-                            prefix: (
-                              <div
-                                data-plasmic-name={"squeezeC1Field22"}
-                                data-plasmic-override={
-                                  overrides.squeezeC1Field22
-                                }
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.squeezeC1Field22
-                                )}
-                              >
-                                <React.Fragment>
-                                  {(() => {
-                                    try {
-                                      return $ctx.fetchDyanamicData.records[0]
-                                        .fields.squeeze_c1_field2;
-                                    } catch (e) {
-                                      if (
-                                        e instanceof TypeError ||
-                                        e?.plasmicType ===
-                                          "PlasmicUndefinedDataError"
-                                      ) {
-                                        return "📩  Your Email Address";
-                                      }
-                                      throw e;
-                                    }
-                                  })()}
-                                </React.Fragment>
-                              </div>
-                            ),
-                            suffix: null,
-                            value: generateStateValueProp($state, [
-                              "input4",
-                              "value"
-                            ])
-                          };
-                          initializeCodeComponentStates(
-                            $state,
-                            [
-                              {
-                                name: "value",
-                                plasmicStateName: "input4.value"
-                              }
-                            ],
-                            [],
-                            AntdInput_Helpers ?? {},
-                            child$Props
-                          );
-
-                          return (
-                            <AntdInput
-                              data-plasmic-name={"input4"}
-                              data-plasmic-override={overrides.input4}
-                              {...child$Props}
-                            />
-                          );
-                        })()}
-                      </FormItemWrapper>
-                      <AntdButton
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button__sqlmw
-                        )}
-                        icon={null}
-                      >
-                        <div
-                          data-plasmic-name={"squeezeC1Cta2"}
-                          data-plasmic-override={overrides.squeezeC1Cta2}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.squeezeC1Cta2
-                          )}
-                        >
-                          {"Submit"}
-                        </div>
-                      </AntdButton>
-                    </FormWrapper>
-                  );
-                })()}
-                <TextInput2
-                  data-plasmic-name={"textInput3"}
-                  data-plasmic-override={overrides.textInput3}
-                  aria-label={"email"}
-                  className={classNames("__wab_instance", sty.textInput3)}
-                  name={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "field1"
-                      : "email"
-                  }
-                  onChange={(...eventArgs) => {
-                    generateStateOnChangeProp($state, ["textInput3", "value"])(
-                      (e => e.target?.value).apply(null, eventArgs)
-                    );
-                  }}
-                  placeholder={"📧 Your Email Address"}
-                  value={
-                    generateStateValueProp($state, ["textInput3", "value"]) ??
-                    ""
-                  }
-                />
-
-                <TextInput2
-                  data-plasmic-name={"textInput4"}
-                  data-plasmic-override={overrides.textInput4}
-                  aria-label={"email"}
-                  className={classNames("__wab_instance", sty.textInput4)}
-                  name={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "field2"
-                      : "email"
-                  }
-                  onChange={(...eventArgs) => {
-                    generateStateOnChangeProp($state, ["textInput4", "value"])(
-                      (e => e.target?.value).apply(null, eventArgs)
-                    );
-                  }}
-                  placeholder={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? " \u260e\ufe0f Your Phone Number"
-                      : "📧 Your Email Address"
-                  }
-                  value={
-                    generateStateValueProp($state, ["textInput4", "value"]) ??
-                    ""
-                  }
-                />
-
-                <Button
-                  className={classNames("__wab_instance", sty.button__ss3AL)}
-                  color={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? undefined
-                      : undefined
-                  }
-                  submitsForm={true}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__d5XqW
-                    )}
-                  >
-                    <React.Fragment>
-                      {(() => {
-                        try {
-                          return $ctx.fetchDyanamicData.records[0].fields
-                            .squeeze_c1_cta;
-                        } catch (e) {
-                          if (
-                            e instanceof TypeError ||
-                            e?.plasmicType === "PlasmicUndefinedDataError"
-                          ) {
-                            return "Get Offer";
-                          }
-                          throw e;
-                        }
-                      })()}
-                    </React.Fragment>
-                  </div>
-                </Button>
-              </form>
-              <div className={classNames(projectcss.all, sty.freeBox__jMxHc)} />
-
-              <div className={classNames(projectcss.all, sty.freeBox__nIEdk)}>
-                <div
-                  data-plasmic-name={"squeezeC1Disclaimer2"}
-                  data-plasmic-override={overrides.squeezeC1Disclaimer2}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.squeezeC1Disclaimer2
-                  )}
-                >
-                  {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                    <React.Fragment>
-                      {(() => {
-                        try {
-                          return $ctx.fetchDyanamicData.records[0].fields
-                            .squeeze_c1_disclaimer;
-                        } catch (e) {
-                          if (
-                            e instanceof TypeError ||
-                            e?.plasmicType === "PlasmicUndefinedDataError"
-                          ) {
-                            return "I agree to receive recurring automated marketing text messages (e.g. cart reminders) at the phone number provided. Consent is not a condition to purchase. Msg & data rates may apply. Msg frequency varies. Reply HELP for help and STOP to cancel. View our Privacy Policy and Terms of Service.";
-                          }
-                          throw e;
-                        }
-                      })()}
-                    </React.Fragment>
-                  ) : (
-                    "I agree to receive recurring automated marketing text messages (e.g. cart reminders) at the phone number provided. Consent is not a condition to purchase. Msg & data rates may apply. Msg frequency varies. Reply HELP for help and STOP to cancel. View our Privacy Policy and Terms of Service."
-                  )}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      ) : null}
-      <div
-        data-plasmic-name={
-          "discoverbeautyfixmedspacomByHtmltodesignFreeVersion24042023190333Gmt4"
-        }
-        data-plasmic-override={
-          overrides.discoverbeautyfixmedspacomByHtmltodesignFreeVersion24042023190333Gmt4
-        }
-        className={classNames(
-          projectcss.all,
-          sty.discoverbeautyfixmedspacomByHtmltodesignFreeVersion24042023190333Gmt4
-        )}
-      >
-        <div
-          data-plasmic-name={"divlpPomRoot"}
-          data-plasmic-override={overrides.divlpPomRoot}
-          className={classNames(projectcss.all, sty.divlpPomRoot)}
-        >
-          <div
-            data-plasmic-name={"divlpPomBlock11"}
-            data-plasmic-override={overrides.divlpPomBlock11}
-            className={classNames(projectcss.all, sty.divlpPomBlock11)}
-          />
-
-          <div
-            data-plasmic-name={"divlpPomBlock21"}
-            data-plasmic-override={overrides.divlpPomBlock21}
-            className={classNames(projectcss.all, sty.divlpPomBlock21)}
-          />
-
-          <div
-            data-plasmic-name={"divlpPositionedContent"}
-            data-plasmic-override={overrides.divlpPositionedContent}
-            className={classNames(projectcss.all, sty.divlpPositionedContent)}
-          >
-            <div
-              data-plasmic-name={"divlpPomBox32"}
-              data-plasmic-override={overrides.divlpPomBox32}
-              className={classNames(projectcss.all, sty.divlpPomBox32)}
-            >
-              <div
-                data-plasmic-name={"divlpPomForm19"}
-                data-plasmic-override={overrides.divlpPomForm19}
-                className={classNames(projectcss.all, sty.divlpPomForm19)}
-              >
-                <div
-                  data-plasmic-name={"inputfirstname"}
-                  data-plasmic-override={overrides.inputfirstname}
-                  className={classNames(projectcss.all, sty.inputfirstname)}
-                >
-                  <div
-                    data-plasmic-name={"divplaceholder"}
-                    data-plasmic-override={overrides.divplaceholder}
-                    className={classNames(projectcss.all, sty.divplaceholder)}
-                  >
-                    <div
-                      data-plasmic-name={"yourFirstName"}
-                      data-plasmic-override={overrides.yourFirstName}
-                      className={classNames(projectcss.all, sty.yourFirstName)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__kddCk
-                        )}
-                      >
-                        {"Your First Name"}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  data-plasmic-name={"inputlastname"}
-                  data-plasmic-override={overrides.inputlastname}
-                  className={classNames(projectcss.all, sty.inputlastname)}
-                >
-                  <div
-                    data-plasmic-name={"divplaceholder2"}
-                    data-plasmic-override={overrides.divplaceholder2}
-                    className={classNames(projectcss.all, sty.divplaceholder2)}
-                  >
-                    <div
-                      data-plasmic-name={"yourLastName"}
-                      data-plasmic-override={overrides.yourLastName}
-                      className={classNames(projectcss.all, sty.yourLastName)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__duciC
-                        )}
-                      >
-                        {"Your Last Name"}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  data-plasmic-name={"inputemail"}
-                  data-plasmic-override={overrides.inputemail}
-                  className={classNames(projectcss.all, sty.inputemail)}
-                >
-                  <div
-                    data-plasmic-name={"divplaceholder3"}
-                    data-plasmic-override={overrides.divplaceholder3}
-                    className={classNames(projectcss.all, sty.divplaceholder3)}
-                  >
-                    <div
-                      data-plasmic-name={"yourEmailAddress"}
-                      data-plasmic-override={overrides.yourEmailAddress}
-                      className={classNames(
-                        projectcss.all,
-                        sty.yourEmailAddress
-                      )}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__ejeq9
-                        )}
-                      >
-                        {"Your Email Address"}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  data-plasmic-name={"inputphone"}
-                  data-plasmic-override={overrides.inputphone}
-                  className={classNames(projectcss.all, sty.inputphone)}
-                >
-                  <div
-                    data-plasmic-name={"divplaceholder4"}
-                    data-plasmic-override={overrides.divplaceholder4}
-                    className={classNames(projectcss.all, sty.divplaceholder4)}
-                  >
-                    <div
-                      data-plasmic-name={"yourPhoneNumber"}
-                      data-plasmic-override={overrides.yourPhoneNumber}
-                      className={classNames(
-                        projectcss.all,
-                        sty.yourPhoneNumber
-                      )}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__awM5G
-                        )}
-                      >
-                        {"Your Phone Number"}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  data-plasmic-name={"divcontainerQualification"}
-                  data-plasmic-override={overrides.divcontainerQualification}
-                  className={classNames(
-                    projectcss.all,
-                    sty.divcontainerQualification
-                  )}
-                >
-                  <div
-                    data-plasmic-name={"yourQualification"}
-                    data-plasmic-override={overrides.yourQualification}
-                    className={classNames(
-                      projectcss.all,
-                      sty.yourQualification
-                    )}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___7AeMq
-                      )}
-                    >
-                      {"Your Qualification"}
-                    </div>
-                  </div>
-                  <div
-                    data-plasmic-name={"selectqualification"}
-                    data-plasmic-override={overrides.selectqualification}
-                    className={classNames(
-                      projectcss.all,
-                      sty.selectqualification
-                    )}
-                  >
-                    <div
-                      data-plasmic-name={"div"}
-                      data-plasmic-override={overrides.div}
-                      className={classNames(projectcss.all, sty.div)}
-                    >
-                      <div
-                        data-plasmic-name={"nurseRnOrNp"}
-                        data-plasmic-override={overrides.nurseRnOrNp}
-                        className={classNames(projectcss.all, sty.nurseRnOrNp)}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__doI78
-                          )}
-                        >
-                          {"Nurse ( RN or NP)"}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  data-plasmic-name={"buttonlpPomButton20"}
-                  data-plasmic-override={overrides.buttonlpPomButton20}
-                  className={classNames(
-                    projectcss.all,
-                    sty.buttonlpPomButton20
-                  )}
-                >
-                  <div
-                    data-plasmic-name={"_continue"}
-                    data-plasmic-override={overrides._continue}
-                    className={classNames(projectcss.all, sty._continue)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__nvfkJ
-                      )}
-                    >
-                      {"CONTINUE"}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              data-plasmic-name={"divlpPomBox26"}
-              data-plasmic-override={overrides.divlpPomBox26}
-              className={classNames(projectcss.all, sty.divlpPomBox26)}
-            >
-              <div
-                data-plasmic-name={"divlpPomImageContainer"}
-                data-plasmic-override={overrides.divlpPomImageContainer}
-                className={classNames(
-                  projectcss.all,
-                  sty.divlpPomImageContainer
-                )}
-              >
-                <div
-                  data-plasmic-name={
-                    "_6D1D5E84CheckoutTrainingCenterPart1110El04G000000000000028Png"
-                  }
-                  data-plasmic-override={
-                    overrides._6D1D5E84CheckoutTrainingCenterPart1110El04G000000000000028Png
-                  }
-                  className={classNames(
-                    projectcss.all,
-                    sty._6D1D5E84CheckoutTrainingCenterPart1110El04G000000000000028Png
-                  )}
-                />
-              </div>
-              <div
-                data-plasmic-name={"divlpPomImageContainer2"}
-                data-plasmic-override={overrides.divlpPomImageContainer2}
-                className={classNames(
-                  projectcss.all,
-                  sty.divlpPomImageContainer2
-                )}
-              >
-                <div
-                  data-plasmic-name={"c510588BTrainingCenterGifPreview2Gif"}
-                  data-plasmic-override={
-                    overrides.c510588BTrainingCenterGifPreview2Gif
-                  }
-                  className={classNames(
-                    projectcss.all,
-                    sty.c510588BTrainingCenterGifPreview2Gif
-                  )}
-                />
-              </div>
-              <div
-                data-plasmic-name={"divlpPomBox46"}
-                data-plasmic-override={overrides.divlpPomBox46}
-                className={classNames(projectcss.all, sty.divlpPomBox46)}
-              >
-                <div
-                  data-plasmic-name={"divlpPomImageContainer3"}
-                  data-plasmic-override={overrides.divlpPomImageContainer3}
-                  className={classNames(
-                    projectcss.all,
-                    sty.divlpPomImageContainer3
-                  )}
-                >
-                  <div
-                    data-plasmic-name={"d33EfddcPinkChecksvg"}
-                    data-plasmic-override={overrides.d33EfddcPinkChecksvg}
-                    className={classNames(
-                      projectcss.all,
-                      sty.d33EfddcPinkChecksvg
-                    )}
-                  >
-                    <div
-                      data-plasmic-name={"d33EfddcPinkChecksvg2"}
-                      data-plasmic-override={overrides.d33EfddcPinkChecksvg2}
-                      className={classNames(
-                        projectcss.all,
-                        sty.d33EfddcPinkChecksvg2
-                      )}
-                    >
-                      <VectorIcon
-                        className={classNames(projectcss.all, sty.svg__hbgEe)}
-                        role={"img"}
-                      />
-
-                      <Vector2Icon
-                        className={classNames(projectcss.all, sty.svg__iZqF8)}
-                        role={"img"}
-                      />
-
-                      <GroupIcon
-                        className={classNames(projectcss.all, sty.svg__nSsve)}
-                        role={"img"}
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div
-                  data-plasmic-name={"learnFacialAnatomyBotulinumToxinScience"}
-                  data-plasmic-override={
-                    overrides.learnFacialAnatomyBotulinumToxinScience
-                  }
-                  className={classNames(
-                    projectcss.all,
-                    sty.learnFacialAnatomyBotulinumToxinScience
-                  )}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__vehbN
-                    )}
-                  >
-                    {"Learn Facial Anatomy & Botulinum Toxin Science"}
-                  </div>
-                </div>
-              </div>
-              <div
-                data-plasmic-name={"divlpPomBox52"}
-                data-plasmic-override={overrides.divlpPomBox52}
-                className={classNames(projectcss.all, sty.divlpPomBox52)}
-              >
-                <div
-                  data-plasmic-name={"divlpPomImageContainer4"}
-                  data-plasmic-override={overrides.divlpPomImageContainer4}
-                  className={classNames(
-                    projectcss.all,
-                    sty.divlpPomImageContainer4
-                  )}
-                >
-                  <div
-                    data-plasmic-name={"d33EfddcPinkChecksvg3"}
-                    data-plasmic-override={overrides.d33EfddcPinkChecksvg3}
-                    className={classNames(
-                      projectcss.all,
-                      sty.d33EfddcPinkChecksvg3
-                    )}
-                  >
-                    <div
-                      data-plasmic-name={"d33EfddcPinkChecksvg4"}
-                      data-plasmic-override={overrides.d33EfddcPinkChecksvg4}
-                      className={classNames(
-                        projectcss.all,
-                        sty.d33EfddcPinkChecksvg4
-                      )}
-                    >
-                      <VectorIcon
-                        className={classNames(projectcss.all, sty.svg__tMnco)}
-                        role={"img"}
-                      />
-
-                      <Vector2Icon
-                        className={classNames(projectcss.all, sty.svg__aCe1)}
-                        role={"img"}
-                      />
-
-                      <GroupIcon
-                        className={classNames(projectcss.all, sty.svg__zZs7R)}
-                        role={"img"}
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div
-                  data-plasmic-name={"smallClassSizeWithDedicated11Support"}
-                  data-plasmic-override={
-                    overrides.smallClassSizeWithDedicated11Support
-                  }
-                  className={classNames(
-                    projectcss.all,
-                    sty.smallClassSizeWithDedicated11Support
-                  )}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__ghrLv
-                    )}
-                  >
-                    {"Small Class Size With Dedicated 1:1 Support"}
-                  </div>
-                </div>
-              </div>
-              <div
-                data-plasmic-name={"divlpPomBox55"}
-                data-plasmic-override={overrides.divlpPomBox55}
-                className={classNames(projectcss.all, sty.divlpPomBox55)}
-              >
-                <div
-                  data-plasmic-name={"divlpPomImageContainer5"}
-                  data-plasmic-override={overrides.divlpPomImageContainer5}
-                  className={classNames(
-                    projectcss.all,
-                    sty.divlpPomImageContainer5
-                  )}
-                >
-                  <div
-                    data-plasmic-name={"d33EfddcPinkChecksvg5"}
-                    data-plasmic-override={overrides.d33EfddcPinkChecksvg5}
-                    className={classNames(
-                      projectcss.all,
-                      sty.d33EfddcPinkChecksvg5
-                    )}
-                  >
-                    <div
-                      data-plasmic-name={"d33EfddcPinkChecksvg6"}
-                      data-plasmic-override={overrides.d33EfddcPinkChecksvg6}
-                      className={classNames(
-                        projectcss.all,
-                        sty.d33EfddcPinkChecksvg6
-                      )}
-                    >
-                      <VectorIcon
-                        className={classNames(projectcss.all, sty.svg__wReVj)}
-                        role={"img"}
-                      />
-
-                      <Vector2Icon
-                        className={classNames(projectcss.all, sty.svg__gd6Ij)}
-                        role={"img"}
-                      />
-
-                      <GroupIcon
-                        className={classNames(projectcss.all, sty.svg__yaylw)}
-                        role={"img"}
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div
-                  data-plasmic-name={"strong"}
-                  data-plasmic-override={overrides.strong}
-                  className={classNames(projectcss.all, sty.strong)}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__aie6U
-                    )}
-                  >
-                    {"$151,109 Medium Annual Salary - Glassdoor"}
-                  </div>
-                </div>
-              </div>
-              <div
-                data-plasmic-name={"divlpPomImageContainer6"}
-                data-plasmic-override={overrides.divlpPomImageContainer6}
-                className={classNames(
-                  projectcss.all,
-                  sty.divlpPomImageContainer6
-                )}
-              >
-                <div
-                  data-plasmic-name={
-                    "_3628940ACheckoutTrainingCenterPart210El08G000000000000028Png"
-                  }
-                  data-plasmic-override={
-                    overrides._3628940ACheckoutTrainingCenterPart210El08G000000000000028Png
-                  }
-                  className={classNames(
-                    projectcss.all,
-                    sty._3628940ACheckoutTrainingCenterPart210El08G000000000000028Png
-                  )}
-                />
-              </div>
-            </div>
-            <div
-              data-plasmic-name={"divlpPomImageContainer7"}
-              data-plasmic-override={overrides.divlpPomImageContainer7}
-              className={classNames(
-                projectcss.all,
-                sty.divlpPomImageContainer7
-              )}
-            >
-              <div
-                data-plasmic-name={
-                  "c38C71DdBeautyfixLogoFullWht105S00V000000000000028Png"
-                }
-                data-plasmic-override={
-                  overrides.c38C71DdBeautyfixLogoFullWht105S00V000000000000028Png
-                }
-                className={classNames(
-                  projectcss.all,
-                  sty.c38C71DdBeautyfixLogoFullWht105S00V000000000000028Png
-                )}
-              />
-            </div>
-            <div
-              data-plasmic-name={"getPricingDetails"}
-              data-plasmic-override={overrides.getPricingDetails}
-              className={classNames(projectcss.all, sty.getPricingDetails)}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text___52Fwe
-                )}
-              >
-                {"Get Pricing Details"}
-              </div>
-            </div>
-            <div
-              data-plasmic-name={"divlpPomImageContainer8"}
-              data-plasmic-override={overrides.divlpPomImageContainer8}
-              className={classNames(
-                projectcss.all,
-                sty.divlpPomImageContainer8
-              )}
-            >
-              <div
-                data-plasmic-name={"_046F157ALogo250X104X01P04X01L000002028Png"}
-                data-plasmic-override={
-                  overrides._046F157ALogo250X104X01P04X01L000002028Png
-                }
-                className={classNames(
-                  projectcss.all,
-                  sty._046F157ALogo250X104X01P04X01L000002028Png
-                )}
-              />
-            </div>
-            <div
-              data-plasmic-name={"span"}
-              data-plasmic-override={overrides.span}
-              className={classNames(projectcss.all, sty.span)}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__cfiwS
-                )}
-              >
-                {
-                  "Unlock Course Pricing\u00a0\u00a0>\u00a0\u00a0Access\u00a0Curriculum & Syllabus"
-                }
-              </div>
-            </div>
-            <div
-              data-plasmic-name={"submitToRequestAdditionalInformation"}
-              data-plasmic-override={
-                overrides.submitToRequestAdditionalInformation
-              }
-              className={classNames(
-                projectcss.all,
-                sty.submitToRequestAdditionalInformation
-              )}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__bJmet
-                )}
-              >
-                {"Submit to Request Additional Information"}
-              </div>
-            </div>
-            <div
-              data-plasmic-name={"divlpPomBox33"}
-              data-plasmic-override={overrides.divlpPomBox33}
-              className={classNames(projectcss.all, sty.divlpPomBox33)}
-            />
-
-            <div
-              data-plasmic-name={"p"}
-              data-plasmic-override={overrides.p}
-              className={classNames(projectcss.all, sty.p)}
-            >
-              <div
-                data-plasmic-name={
-                  "iAgreeToReceiveRecurringAutomatedMarketingTextMessagesEg"
-                }
-                data-plasmic-override={
-                  overrides.iAgreeToReceiveRecurringAutomatedMarketingTextMessagesEg
-                }
-                className={classNames(
-                  projectcss.all,
-                  sty.iAgreeToReceiveRecurringAutomatedMarketingTextMessagesEg
-                )}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__uWn
-                  )}
-                >
-                  {
-                    "I agree to receive recurring automated marketing text messages (e.g."
-                  }
-                </div>
-              </div>
-              <div
-                data-plasmic-name={
-                  "cartRemindersAtThePhoneNumberProvidedConsentIsNotA"
-                }
-                data-plasmic-override={
-                  overrides.cartRemindersAtThePhoneNumberProvidedConsentIsNotA
-                }
-                className={classNames(
-                  projectcss.all,
-                  sty.cartRemindersAtThePhoneNumberProvidedConsentIsNotA
-                )}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__pM5DC
-                  )}
-                >
-                  {
-                    "cart reminders) at the phone number provided. Consent is not a"
-                  }
-                </div>
-              </div>
-              <div
-                data-plasmic-name={
-                  "conditionToPurchaseMsgDataRatesMayApplyMsgFrequency"
-                }
-                data-plasmic-override={
-                  overrides.conditionToPurchaseMsgDataRatesMayApplyMsgFrequency
-                }
-                className={classNames(
-                  projectcss.all,
-                  sty.conditionToPurchaseMsgDataRatesMayApplyMsgFrequency
-                )}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text___2ZX1
-                  )}
-                >
-                  {
-                    "condition to purchase. Msg & data rates may apply. Msg frequency"
-                  }
-                </div>
-              </div>
-              <div
-                data-plasmic-name={
-                  "variesReplyHelpForHelpAndStopToCancelViewOurPrivacy"
-                }
-                data-plasmic-override={
-                  overrides.variesReplyHelpForHelpAndStopToCancelViewOurPrivacy
-                }
-                className={classNames(
-                  projectcss.all,
-                  sty.variesReplyHelpForHelpAndStopToCancelViewOurPrivacy
-                )}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__ruxzb
-                  )}
-                >
-                  {
-                    "varies. Reply HELP for help and STOP to cancel. View our\u00a0Privacy"
-                  }
-                </div>
-              </div>
-              <div
-                data-plasmic-name={"policyAndTermsOfService"}
-                data-plasmic-override={overrides.policyAndTermsOfService}
-                className={classNames(
-                  projectcss.all,
-                  sty.policyAndTermsOfService
-                )}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__vvqK
-                  )}
-                >
-                  {"Policy\u00a0and\u00a0Terms of Service."}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <Embed
-        data-plasmic-name={"embedHtml"}
-        data-plasmic-override={overrides.embedHtml}
-        className={classNames("__wab_instance", sty.embedHtml)}
-      />
     </div>
   ) as React.ReactElement | null;
 }
@@ -5750,6 +3867,7 @@ const PlasmicDescendants = {
   root: [
     "root",
     "desktop",
+    "columns",
     "editableLogoLogo",
     "logo",
     "editImage53",
@@ -5763,8 +3881,10 @@ const PlasmicDescendants = {
     "text3",
     "editText3R",
     "form",
+    "formField",
     "input",
     "input2",
+    "button",
     "squeezeC1Cta",
     "text4",
     "text5",
@@ -5818,112 +3938,11 @@ const PlasmicDescendants = {
     "text16",
     "editText162",
     "text17",
-    "editText172",
-    "mobile",
-    "logo3",
-    "editableLogoLogo2",
-    "logo4",
-    "editImage54",
-    "squeezeC2Thumbnail2",
-    "squeezeC2H13",
-    "squeezeC2H14",
-    "iconValue4",
-    "squeezeC2Icon12",
-    "squeezeC2Icon1Value12",
-    "iconValue5",
-    "squeezeC2Icon22",
-    "squeezeC2Icon1Value22",
-    "iconValue6",
-    "squeezeC2Icon32",
-    "squeezeC2Icon1Value32",
-    "squeezeC2CtaH12",
-    "squeezeC2CtaH22",
-    "watchers2",
-    "squeezeC2Proof2",
-    "squeezeC2OfferH12",
-    "squeezeC2OfferThumbnail2",
-    "squeezeC2ValueH12",
-    "squeezeC2ValueH22",
-    "squeezeC2ValueH32",
-    "logo2",
-    "squeezeNav2",
-    "squeezeC1H12",
-    "squeezeC1H22",
-    "form2",
-    "input3",
-    "squeezeC1Field12",
-    "input4",
-    "squeezeC1Field22",
-    "squeezeC1Cta2",
-    "textInput3",
-    "textInput4",
-    "squeezeC1Disclaimer2",
-    "discoverbeautyfixmedspacomByHtmltodesignFreeVersion24042023190333Gmt4",
-    "divlpPomRoot",
-    "divlpPomBlock11",
-    "divlpPomBlock21",
-    "divlpPositionedContent",
-    "divlpPomBox32",
-    "divlpPomForm19",
-    "inputfirstname",
-    "divplaceholder",
-    "yourFirstName",
-    "inputlastname",
-    "divplaceholder2",
-    "yourLastName",
-    "inputemail",
-    "divplaceholder3",
-    "yourEmailAddress",
-    "inputphone",
-    "divplaceholder4",
-    "yourPhoneNumber",
-    "divcontainerQualification",
-    "yourQualification",
-    "selectqualification",
-    "div",
-    "nurseRnOrNp",
-    "buttonlpPomButton20",
-    "_continue",
-    "divlpPomBox26",
-    "divlpPomImageContainer",
-    "_6D1D5E84CheckoutTrainingCenterPart1110El04G000000000000028Png",
-    "divlpPomImageContainer2",
-    "c510588BTrainingCenterGifPreview2Gif",
-    "divlpPomBox46",
-    "divlpPomImageContainer3",
-    "d33EfddcPinkChecksvg",
-    "d33EfddcPinkChecksvg2",
-    "learnFacialAnatomyBotulinumToxinScience",
-    "divlpPomBox52",
-    "divlpPomImageContainer4",
-    "d33EfddcPinkChecksvg3",
-    "d33EfddcPinkChecksvg4",
-    "smallClassSizeWithDedicated11Support",
-    "divlpPomBox55",
-    "divlpPomImageContainer5",
-    "d33EfddcPinkChecksvg5",
-    "d33EfddcPinkChecksvg6",
-    "strong",
-    "divlpPomImageContainer6",
-    "_3628940ACheckoutTrainingCenterPart210El08G000000000000028Png",
-    "divlpPomImageContainer7",
-    "c38C71DdBeautyfixLogoFullWht105S00V000000000000028Png",
-    "getPricingDetails",
-    "divlpPomImageContainer8",
-    "_046F157ALogo250X104X01P04X01L000002028Png",
-    "span",
-    "submitToRequestAdditionalInformation",
-    "divlpPomBox33",
-    "p",
-    "iAgreeToReceiveRecurringAutomatedMarketingTextMessagesEg",
-    "cartRemindersAtThePhoneNumberProvidedConsentIsNotA",
-    "conditionToPurchaseMsgDataRatesMayApplyMsgFrequency",
-    "variesReplyHelpForHelpAndStopToCancelViewOurPrivacy",
-    "policyAndTermsOfService",
-    "embedHtml"
+    "editText172"
   ],
   desktop: [
     "desktop",
+    "columns",
     "editableLogoLogo",
     "logo",
     "editImage53",
@@ -5937,8 +3956,84 @@ const PlasmicDescendants = {
     "text3",
     "editText3R",
     "form",
+    "formField",
     "input",
     "input2",
+    "button",
+    "squeezeC1Cta",
+    "text4",
+    "text5",
+    "text6",
+    "editableText6",
+    "editText6R",
+    "disclaimer",
+    "editableImage1",
+    "image1",
+    "editImage1R",
+    "editableText7",
+    "text7",
+    "editText7R",
+    "editableText8",
+    "text8",
+    "editText8R",
+    "iconValue1",
+    "editableImage2",
+    "image2",
+    "editImage2R",
+    "editableText9",
+    "text9",
+    "editText9R",
+    "iconValue2",
+    "editableImage3",
+    "image3",
+    "editImage3R",
+    "editableText10",
+    "text10",
+    "editText10R",
+    "iconValue3",
+    "editableImage4",
+    "image4",
+    "editImage4R",
+    "editableText11",
+    "text11",
+    "editText11R",
+    "squeezeC2CtaH1",
+    "squeezeC2CtaH2",
+    "watchers",
+    "text12",
+    "editText123",
+    "text13",
+    "editText132",
+    "image5",
+    "editImage52",
+    "text14",
+    "editText142",
+    "text15",
+    "editText152",
+    "text16",
+    "editText162",
+    "text17",
+    "editText172"
+  ],
+  columns: [
+    "columns",
+    "editableLogoLogo",
+    "logo",
+    "editImage53",
+    "editableText1",
+    "text1",
+    "editText1R",
+    "editableText2",
+    "text2",
+    "editText2R",
+    "editableText3",
+    "text3",
+    "editText3R",
+    "form",
+    "formField",
+    "input",
+    "input2",
+    "button",
     "squeezeC1Cta",
     "text4",
     "text5",
@@ -6006,9 +4101,11 @@ const PlasmicDescendants = {
   editableText3: ["editableText3", "text3", "editText3R"],
   text3: ["text3"],
   editText3R: ["editText3R"],
-  form: ["form", "input", "input2", "squeezeC1Cta"],
+  form: ["form", "formField", "input", "input2", "button", "squeezeC1Cta"],
+  formField: ["formField", "input", "input2"],
   input: ["input"],
   input2: ["input2"],
+  button: ["button", "squeezeC1Cta"],
   squeezeC1Cta: ["squeezeC1Cta"],
   text4: ["text4"],
   text5: ["text5"],
@@ -6086,488 +4183,7 @@ const PlasmicDescendants = {
   text16: ["text16"],
   editText162: ["editText162"],
   text17: ["text17"],
-  editText172: ["editText172"],
-  mobile: [
-    "mobile",
-    "logo3",
-    "editableLogoLogo2",
-    "logo4",
-    "editImage54",
-    "squeezeC2Thumbnail2",
-    "squeezeC2H13",
-    "squeezeC2H14",
-    "iconValue4",
-    "squeezeC2Icon12",
-    "squeezeC2Icon1Value12",
-    "iconValue5",
-    "squeezeC2Icon22",
-    "squeezeC2Icon1Value22",
-    "iconValue6",
-    "squeezeC2Icon32",
-    "squeezeC2Icon1Value32",
-    "squeezeC2CtaH12",
-    "squeezeC2CtaH22",
-    "watchers2",
-    "squeezeC2Proof2",
-    "squeezeC2OfferH12",
-    "squeezeC2OfferThumbnail2",
-    "squeezeC2ValueH12",
-    "squeezeC2ValueH22",
-    "squeezeC2ValueH32",
-    "logo2",
-    "squeezeNav2",
-    "squeezeC1H12",
-    "squeezeC1H22",
-    "form2",
-    "input3",
-    "squeezeC1Field12",
-    "input4",
-    "squeezeC1Field22",
-    "squeezeC1Cta2",
-    "textInput3",
-    "textInput4",
-    "squeezeC1Disclaimer2"
-  ],
-  logo3: ["logo3"],
-  editableLogoLogo2: ["editableLogoLogo2", "logo4", "editImage54"],
-  logo4: ["logo4"],
-  editImage54: ["editImage54"],
-  squeezeC2Thumbnail2: ["squeezeC2Thumbnail2"],
-  squeezeC2H13: ["squeezeC2H13"],
-  squeezeC2H14: ["squeezeC2H14"],
-  iconValue4: ["iconValue4", "squeezeC2Icon12", "squeezeC2Icon1Value12"],
-  squeezeC2Icon12: ["squeezeC2Icon12"],
-  squeezeC2Icon1Value12: ["squeezeC2Icon1Value12"],
-  iconValue5: ["iconValue5", "squeezeC2Icon22", "squeezeC2Icon1Value22"],
-  squeezeC2Icon22: ["squeezeC2Icon22"],
-  squeezeC2Icon1Value22: ["squeezeC2Icon1Value22"],
-  iconValue6: ["iconValue6", "squeezeC2Icon32", "squeezeC2Icon1Value32"],
-  squeezeC2Icon32: ["squeezeC2Icon32"],
-  squeezeC2Icon1Value32: ["squeezeC2Icon1Value32"],
-  squeezeC2CtaH12: ["squeezeC2CtaH12"],
-  squeezeC2CtaH22: ["squeezeC2CtaH22"],
-  watchers2: ["watchers2", "squeezeC2Proof2"],
-  squeezeC2Proof2: ["squeezeC2Proof2"],
-  squeezeC2OfferH12: ["squeezeC2OfferH12"],
-  squeezeC2OfferThumbnail2: ["squeezeC2OfferThumbnail2"],
-  squeezeC2ValueH12: ["squeezeC2ValueH12"],
-  squeezeC2ValueH22: ["squeezeC2ValueH22"],
-  squeezeC2ValueH32: ["squeezeC2ValueH32"],
-  logo2: ["logo2"],
-  squeezeNav2: ["squeezeNav2"],
-  squeezeC1H12: ["squeezeC1H12"],
-  squeezeC1H22: ["squeezeC1H22"],
-  form2: [
-    "form2",
-    "input3",
-    "squeezeC1Field12",
-    "input4",
-    "squeezeC1Field22",
-    "squeezeC1Cta2"
-  ],
-  input3: ["input3", "squeezeC1Field12"],
-  squeezeC1Field12: ["squeezeC1Field12"],
-  input4: ["input4", "squeezeC1Field22"],
-  squeezeC1Field22: ["squeezeC1Field22"],
-  squeezeC1Cta2: ["squeezeC1Cta2"],
-  textInput3: ["textInput3"],
-  textInput4: ["textInput4"],
-  squeezeC1Disclaimer2: ["squeezeC1Disclaimer2"],
-  discoverbeautyfixmedspacomByHtmltodesignFreeVersion24042023190333Gmt4: [
-    "discoverbeautyfixmedspacomByHtmltodesignFreeVersion24042023190333Gmt4",
-    "divlpPomRoot",
-    "divlpPomBlock11",
-    "divlpPomBlock21",
-    "divlpPositionedContent",
-    "divlpPomBox32",
-    "divlpPomForm19",
-    "inputfirstname",
-    "divplaceholder",
-    "yourFirstName",
-    "inputlastname",
-    "divplaceholder2",
-    "yourLastName",
-    "inputemail",
-    "divplaceholder3",
-    "yourEmailAddress",
-    "inputphone",
-    "divplaceholder4",
-    "yourPhoneNumber",
-    "divcontainerQualification",
-    "yourQualification",
-    "selectqualification",
-    "div",
-    "nurseRnOrNp",
-    "buttonlpPomButton20",
-    "_continue",
-    "divlpPomBox26",
-    "divlpPomImageContainer",
-    "_6D1D5E84CheckoutTrainingCenterPart1110El04G000000000000028Png",
-    "divlpPomImageContainer2",
-    "c510588BTrainingCenterGifPreview2Gif",
-    "divlpPomBox46",
-    "divlpPomImageContainer3",
-    "d33EfddcPinkChecksvg",
-    "d33EfddcPinkChecksvg2",
-    "learnFacialAnatomyBotulinumToxinScience",
-    "divlpPomBox52",
-    "divlpPomImageContainer4",
-    "d33EfddcPinkChecksvg3",
-    "d33EfddcPinkChecksvg4",
-    "smallClassSizeWithDedicated11Support",
-    "divlpPomBox55",
-    "divlpPomImageContainer5",
-    "d33EfddcPinkChecksvg5",
-    "d33EfddcPinkChecksvg6",
-    "strong",
-    "divlpPomImageContainer6",
-    "_3628940ACheckoutTrainingCenterPart210El08G000000000000028Png",
-    "divlpPomImageContainer7",
-    "c38C71DdBeautyfixLogoFullWht105S00V000000000000028Png",
-    "getPricingDetails",
-    "divlpPomImageContainer8",
-    "_046F157ALogo250X104X01P04X01L000002028Png",
-    "span",
-    "submitToRequestAdditionalInformation",
-    "divlpPomBox33",
-    "p",
-    "iAgreeToReceiveRecurringAutomatedMarketingTextMessagesEg",
-    "cartRemindersAtThePhoneNumberProvidedConsentIsNotA",
-    "conditionToPurchaseMsgDataRatesMayApplyMsgFrequency",
-    "variesReplyHelpForHelpAndStopToCancelViewOurPrivacy",
-    "policyAndTermsOfService"
-  ],
-  divlpPomRoot: [
-    "divlpPomRoot",
-    "divlpPomBlock11",
-    "divlpPomBlock21",
-    "divlpPositionedContent",
-    "divlpPomBox32",
-    "divlpPomForm19",
-    "inputfirstname",
-    "divplaceholder",
-    "yourFirstName",
-    "inputlastname",
-    "divplaceholder2",
-    "yourLastName",
-    "inputemail",
-    "divplaceholder3",
-    "yourEmailAddress",
-    "inputphone",
-    "divplaceholder4",
-    "yourPhoneNumber",
-    "divcontainerQualification",
-    "yourQualification",
-    "selectqualification",
-    "div",
-    "nurseRnOrNp",
-    "buttonlpPomButton20",
-    "_continue",
-    "divlpPomBox26",
-    "divlpPomImageContainer",
-    "_6D1D5E84CheckoutTrainingCenterPart1110El04G000000000000028Png",
-    "divlpPomImageContainer2",
-    "c510588BTrainingCenterGifPreview2Gif",
-    "divlpPomBox46",
-    "divlpPomImageContainer3",
-    "d33EfddcPinkChecksvg",
-    "d33EfddcPinkChecksvg2",
-    "learnFacialAnatomyBotulinumToxinScience",
-    "divlpPomBox52",
-    "divlpPomImageContainer4",
-    "d33EfddcPinkChecksvg3",
-    "d33EfddcPinkChecksvg4",
-    "smallClassSizeWithDedicated11Support",
-    "divlpPomBox55",
-    "divlpPomImageContainer5",
-    "d33EfddcPinkChecksvg5",
-    "d33EfddcPinkChecksvg6",
-    "strong",
-    "divlpPomImageContainer6",
-    "_3628940ACheckoutTrainingCenterPart210El08G000000000000028Png",
-    "divlpPomImageContainer7",
-    "c38C71DdBeautyfixLogoFullWht105S00V000000000000028Png",
-    "getPricingDetails",
-    "divlpPomImageContainer8",
-    "_046F157ALogo250X104X01P04X01L000002028Png",
-    "span",
-    "submitToRequestAdditionalInformation",
-    "divlpPomBox33",
-    "p",
-    "iAgreeToReceiveRecurringAutomatedMarketingTextMessagesEg",
-    "cartRemindersAtThePhoneNumberProvidedConsentIsNotA",
-    "conditionToPurchaseMsgDataRatesMayApplyMsgFrequency",
-    "variesReplyHelpForHelpAndStopToCancelViewOurPrivacy",
-    "policyAndTermsOfService"
-  ],
-  divlpPomBlock11: ["divlpPomBlock11"],
-  divlpPomBlock21: ["divlpPomBlock21"],
-  divlpPositionedContent: [
-    "divlpPositionedContent",
-    "divlpPomBox32",
-    "divlpPomForm19",
-    "inputfirstname",
-    "divplaceholder",
-    "yourFirstName",
-    "inputlastname",
-    "divplaceholder2",
-    "yourLastName",
-    "inputemail",
-    "divplaceholder3",
-    "yourEmailAddress",
-    "inputphone",
-    "divplaceholder4",
-    "yourPhoneNumber",
-    "divcontainerQualification",
-    "yourQualification",
-    "selectqualification",
-    "div",
-    "nurseRnOrNp",
-    "buttonlpPomButton20",
-    "_continue",
-    "divlpPomBox26",
-    "divlpPomImageContainer",
-    "_6D1D5E84CheckoutTrainingCenterPart1110El04G000000000000028Png",
-    "divlpPomImageContainer2",
-    "c510588BTrainingCenterGifPreview2Gif",
-    "divlpPomBox46",
-    "divlpPomImageContainer3",
-    "d33EfddcPinkChecksvg",
-    "d33EfddcPinkChecksvg2",
-    "learnFacialAnatomyBotulinumToxinScience",
-    "divlpPomBox52",
-    "divlpPomImageContainer4",
-    "d33EfddcPinkChecksvg3",
-    "d33EfddcPinkChecksvg4",
-    "smallClassSizeWithDedicated11Support",
-    "divlpPomBox55",
-    "divlpPomImageContainer5",
-    "d33EfddcPinkChecksvg5",
-    "d33EfddcPinkChecksvg6",
-    "strong",
-    "divlpPomImageContainer6",
-    "_3628940ACheckoutTrainingCenterPart210El08G000000000000028Png",
-    "divlpPomImageContainer7",
-    "c38C71DdBeautyfixLogoFullWht105S00V000000000000028Png",
-    "getPricingDetails",
-    "divlpPomImageContainer8",
-    "_046F157ALogo250X104X01P04X01L000002028Png",
-    "span",
-    "submitToRequestAdditionalInformation",
-    "divlpPomBox33",
-    "p",
-    "iAgreeToReceiveRecurringAutomatedMarketingTextMessagesEg",
-    "cartRemindersAtThePhoneNumberProvidedConsentIsNotA",
-    "conditionToPurchaseMsgDataRatesMayApplyMsgFrequency",
-    "variesReplyHelpForHelpAndStopToCancelViewOurPrivacy",
-    "policyAndTermsOfService"
-  ],
-  divlpPomBox32: [
-    "divlpPomBox32",
-    "divlpPomForm19",
-    "inputfirstname",
-    "divplaceholder",
-    "yourFirstName",
-    "inputlastname",
-    "divplaceholder2",
-    "yourLastName",
-    "inputemail",
-    "divplaceholder3",
-    "yourEmailAddress",
-    "inputphone",
-    "divplaceholder4",
-    "yourPhoneNumber",
-    "divcontainerQualification",
-    "yourQualification",
-    "selectqualification",
-    "div",
-    "nurseRnOrNp",
-    "buttonlpPomButton20",
-    "_continue"
-  ],
-  divlpPomForm19: [
-    "divlpPomForm19",
-    "inputfirstname",
-    "divplaceholder",
-    "yourFirstName",
-    "inputlastname",
-    "divplaceholder2",
-    "yourLastName",
-    "inputemail",
-    "divplaceholder3",
-    "yourEmailAddress",
-    "inputphone",
-    "divplaceholder4",
-    "yourPhoneNumber",
-    "divcontainerQualification",
-    "yourQualification",
-    "selectqualification",
-    "div",
-    "nurseRnOrNp",
-    "buttonlpPomButton20",
-    "_continue"
-  ],
-  inputfirstname: ["inputfirstname", "divplaceholder", "yourFirstName"],
-  divplaceholder: ["divplaceholder", "yourFirstName"],
-  yourFirstName: ["yourFirstName"],
-  inputlastname: ["inputlastname", "divplaceholder2", "yourLastName"],
-  divplaceholder2: ["divplaceholder2", "yourLastName"],
-  yourLastName: ["yourLastName"],
-  inputemail: ["inputemail", "divplaceholder3", "yourEmailAddress"],
-  divplaceholder3: ["divplaceholder3", "yourEmailAddress"],
-  yourEmailAddress: ["yourEmailAddress"],
-  inputphone: ["inputphone", "divplaceholder4", "yourPhoneNumber"],
-  divplaceholder4: ["divplaceholder4", "yourPhoneNumber"],
-  yourPhoneNumber: ["yourPhoneNumber"],
-  divcontainerQualification: [
-    "divcontainerQualification",
-    "yourQualification",
-    "selectqualification",
-    "div",
-    "nurseRnOrNp"
-  ],
-  yourQualification: ["yourQualification"],
-  selectqualification: ["selectqualification", "div", "nurseRnOrNp"],
-  div: ["div", "nurseRnOrNp"],
-  nurseRnOrNp: ["nurseRnOrNp"],
-  buttonlpPomButton20: ["buttonlpPomButton20", "_continue"],
-  _continue: ["_continue"],
-  divlpPomBox26: [
-    "divlpPomBox26",
-    "divlpPomImageContainer",
-    "_6D1D5E84CheckoutTrainingCenterPart1110El04G000000000000028Png",
-    "divlpPomImageContainer2",
-    "c510588BTrainingCenterGifPreview2Gif",
-    "divlpPomBox46",
-    "divlpPomImageContainer3",
-    "d33EfddcPinkChecksvg",
-    "d33EfddcPinkChecksvg2",
-    "learnFacialAnatomyBotulinumToxinScience",
-    "divlpPomBox52",
-    "divlpPomImageContainer4",
-    "d33EfddcPinkChecksvg3",
-    "d33EfddcPinkChecksvg4",
-    "smallClassSizeWithDedicated11Support",
-    "divlpPomBox55",
-    "divlpPomImageContainer5",
-    "d33EfddcPinkChecksvg5",
-    "d33EfddcPinkChecksvg6",
-    "strong",
-    "divlpPomImageContainer6",
-    "_3628940ACheckoutTrainingCenterPart210El08G000000000000028Png"
-  ],
-  divlpPomImageContainer: [
-    "divlpPomImageContainer",
-    "_6D1D5E84CheckoutTrainingCenterPart1110El04G000000000000028Png"
-  ],
-  _6D1D5E84CheckoutTrainingCenterPart1110El04G000000000000028Png: [
-    "_6D1D5E84CheckoutTrainingCenterPart1110El04G000000000000028Png"
-  ],
-  divlpPomImageContainer2: [
-    "divlpPomImageContainer2",
-    "c510588BTrainingCenterGifPreview2Gif"
-  ],
-  c510588BTrainingCenterGifPreview2Gif: [
-    "c510588BTrainingCenterGifPreview2Gif"
-  ],
-  divlpPomBox46: [
-    "divlpPomBox46",
-    "divlpPomImageContainer3",
-    "d33EfddcPinkChecksvg",
-    "d33EfddcPinkChecksvg2",
-    "learnFacialAnatomyBotulinumToxinScience"
-  ],
-  divlpPomImageContainer3: [
-    "divlpPomImageContainer3",
-    "d33EfddcPinkChecksvg",
-    "d33EfddcPinkChecksvg2"
-  ],
-  d33EfddcPinkChecksvg: ["d33EfddcPinkChecksvg", "d33EfddcPinkChecksvg2"],
-  d33EfddcPinkChecksvg2: ["d33EfddcPinkChecksvg2"],
-  learnFacialAnatomyBotulinumToxinScience: [
-    "learnFacialAnatomyBotulinumToxinScience"
-  ],
-  divlpPomBox52: [
-    "divlpPomBox52",
-    "divlpPomImageContainer4",
-    "d33EfddcPinkChecksvg3",
-    "d33EfddcPinkChecksvg4",
-    "smallClassSizeWithDedicated11Support"
-  ],
-  divlpPomImageContainer4: [
-    "divlpPomImageContainer4",
-    "d33EfddcPinkChecksvg3",
-    "d33EfddcPinkChecksvg4"
-  ],
-  d33EfddcPinkChecksvg3: ["d33EfddcPinkChecksvg3", "d33EfddcPinkChecksvg4"],
-  d33EfddcPinkChecksvg4: ["d33EfddcPinkChecksvg4"],
-  smallClassSizeWithDedicated11Support: [
-    "smallClassSizeWithDedicated11Support"
-  ],
-  divlpPomBox55: [
-    "divlpPomBox55",
-    "divlpPomImageContainer5",
-    "d33EfddcPinkChecksvg5",
-    "d33EfddcPinkChecksvg6",
-    "strong"
-  ],
-  divlpPomImageContainer5: [
-    "divlpPomImageContainer5",
-    "d33EfddcPinkChecksvg5",
-    "d33EfddcPinkChecksvg6"
-  ],
-  d33EfddcPinkChecksvg5: ["d33EfddcPinkChecksvg5", "d33EfddcPinkChecksvg6"],
-  d33EfddcPinkChecksvg6: ["d33EfddcPinkChecksvg6"],
-  strong: ["strong"],
-  divlpPomImageContainer6: [
-    "divlpPomImageContainer6",
-    "_3628940ACheckoutTrainingCenterPart210El08G000000000000028Png"
-  ],
-  _3628940ACheckoutTrainingCenterPart210El08G000000000000028Png: [
-    "_3628940ACheckoutTrainingCenterPart210El08G000000000000028Png"
-  ],
-  divlpPomImageContainer7: [
-    "divlpPomImageContainer7",
-    "c38C71DdBeautyfixLogoFullWht105S00V000000000000028Png"
-  ],
-  c38C71DdBeautyfixLogoFullWht105S00V000000000000028Png: [
-    "c38C71DdBeautyfixLogoFullWht105S00V000000000000028Png"
-  ],
-  getPricingDetails: ["getPricingDetails"],
-  divlpPomImageContainer8: [
-    "divlpPomImageContainer8",
-    "_046F157ALogo250X104X01P04X01L000002028Png"
-  ],
-  _046F157ALogo250X104X01P04X01L000002028Png: [
-    "_046F157ALogo250X104X01P04X01L000002028Png"
-  ],
-  span: ["span"],
-  submitToRequestAdditionalInformation: [
-    "submitToRequestAdditionalInformation"
-  ],
-  divlpPomBox33: ["divlpPomBox33"],
-  p: [
-    "p",
-    "iAgreeToReceiveRecurringAutomatedMarketingTextMessagesEg",
-    "cartRemindersAtThePhoneNumberProvidedConsentIsNotA",
-    "conditionToPurchaseMsgDataRatesMayApplyMsgFrequency",
-    "variesReplyHelpForHelpAndStopToCancelViewOurPrivacy",
-    "policyAndTermsOfService"
-  ],
-  iAgreeToReceiveRecurringAutomatedMarketingTextMessagesEg: [
-    "iAgreeToReceiveRecurringAutomatedMarketingTextMessagesEg"
-  ],
-  cartRemindersAtThePhoneNumberProvidedConsentIsNotA: [
-    "cartRemindersAtThePhoneNumberProvidedConsentIsNotA"
-  ],
-  conditionToPurchaseMsgDataRatesMayApplyMsgFrequency: [
-    "conditionToPurchaseMsgDataRatesMayApplyMsgFrequency"
-  ],
-  variesReplyHelpForHelpAndStopToCancelViewOurPrivacy: [
-    "variesReplyHelpForHelpAndStopToCancelViewOurPrivacy"
-  ],
-  policyAndTermsOfService: ["policyAndTermsOfService"],
-  embedHtml: ["embedHtml"]
+  editText172: ["editText172"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -6575,6 +4191,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   desktop: "div";
+  columns: "div";
   editableLogoLogo: typeof Editable;
   logo: typeof PlasmicImg__;
   editImage53: typeof TextInput;
@@ -6588,8 +4205,10 @@ type NodeDefaultElementType = {
   text3: "div";
   editText3R: typeof TextInput;
   form: typeof FormWrapper;
+  formField: typeof FormItemWrapper;
   input: typeof AntdInput;
   input2: typeof AntdInput;
+  button: typeof AntdButton;
   squeezeC1Cta: "div";
   text4: typeof TextInput2;
   text5: typeof TextInput2;
@@ -6644,108 +4263,6 @@ type NodeDefaultElementType = {
   editText162: typeof TextInput;
   text17: "div";
   editText172: typeof TextInput;
-  mobile: "div";
-  logo3: typeof PlasmicImg__;
-  editableLogoLogo2: typeof Editable;
-  logo4: typeof PlasmicImg__;
-  editImage54: typeof TextInput;
-  squeezeC2Thumbnail2: typeof PlasmicImg__;
-  squeezeC2H13: "div";
-  squeezeC2H14: "div";
-  iconValue4: "div";
-  squeezeC2Icon12: typeof PlasmicImg__;
-  squeezeC2Icon1Value12: "div";
-  iconValue5: "div";
-  squeezeC2Icon22: typeof PlasmicImg__;
-  squeezeC2Icon1Value22: "div";
-  iconValue6: "div";
-  squeezeC2Icon32: typeof PlasmicImg__;
-  squeezeC2Icon1Value32: "div";
-  squeezeC2CtaH12: "div";
-  squeezeC2CtaH22: "div";
-  watchers2: "div";
-  squeezeC2Proof2: "div";
-  squeezeC2OfferH12: "div";
-  squeezeC2OfferThumbnail2: typeof PlasmicImg__;
-  squeezeC2ValueH12: "div";
-  squeezeC2ValueH22: "div";
-  squeezeC2ValueH32: "div";
-  logo2: typeof PlasmicImg__;
-  squeezeNav2: "div";
-  squeezeC1H12: "div";
-  squeezeC1H22: "div";
-  form2: typeof FormWrapper;
-  input3: typeof AntdInput;
-  squeezeC1Field12: "div";
-  input4: typeof AntdInput;
-  squeezeC1Field22: "div";
-  squeezeC1Cta2: "div";
-  textInput3: typeof TextInput2;
-  textInput4: typeof TextInput2;
-  squeezeC1Disclaimer2: "div";
-  discoverbeautyfixmedspacomByHtmltodesignFreeVersion24042023190333Gmt4: "div";
-  divlpPomRoot: "div";
-  divlpPomBlock11: "div";
-  divlpPomBlock21: "div";
-  divlpPositionedContent: "div";
-  divlpPomBox32: "div";
-  divlpPomForm19: "div";
-  inputfirstname: "div";
-  divplaceholder: "div";
-  yourFirstName: "div";
-  inputlastname: "div";
-  divplaceholder2: "div";
-  yourLastName: "div";
-  inputemail: "div";
-  divplaceholder3: "div";
-  yourEmailAddress: "div";
-  inputphone: "div";
-  divplaceholder4: "div";
-  yourPhoneNumber: "div";
-  divcontainerQualification: "div";
-  yourQualification: "div";
-  selectqualification: "div";
-  div: "div";
-  nurseRnOrNp: "div";
-  buttonlpPomButton20: "div";
-  _continue: "div";
-  divlpPomBox26: "div";
-  divlpPomImageContainer: "div";
-  _6D1D5E84CheckoutTrainingCenterPart1110El04G000000000000028Png: "div";
-  divlpPomImageContainer2: "div";
-  c510588BTrainingCenterGifPreview2Gif: "div";
-  divlpPomBox46: "div";
-  divlpPomImageContainer3: "div";
-  d33EfddcPinkChecksvg: "div";
-  d33EfddcPinkChecksvg2: "div";
-  learnFacialAnatomyBotulinumToxinScience: "div";
-  divlpPomBox52: "div";
-  divlpPomImageContainer4: "div";
-  d33EfddcPinkChecksvg3: "div";
-  d33EfddcPinkChecksvg4: "div";
-  smallClassSizeWithDedicated11Support: "div";
-  divlpPomBox55: "div";
-  divlpPomImageContainer5: "div";
-  d33EfddcPinkChecksvg5: "div";
-  d33EfddcPinkChecksvg6: "div";
-  strong: "div";
-  divlpPomImageContainer6: "div";
-  _3628940ACheckoutTrainingCenterPart210El08G000000000000028Png: "div";
-  divlpPomImageContainer7: "div";
-  c38C71DdBeautyfixLogoFullWht105S00V000000000000028Png: "div";
-  getPricingDetails: "div";
-  divlpPomImageContainer8: "div";
-  _046F157ALogo250X104X01P04X01L000002028Png: "div";
-  span: "div";
-  submitToRequestAdditionalInformation: "div";
-  divlpPomBox33: "div";
-  p: "div";
-  iAgreeToReceiveRecurringAutomatedMarketingTextMessagesEg: "div";
-  cartRemindersAtThePhoneNumberProvidedConsentIsNotA: "div";
-  conditionToPurchaseMsgDataRatesMayApplyMsgFrequency: "div";
-  variesReplyHelpForHelpAndStopToCancelViewOurPrivacy: "div";
-  policyAndTermsOfService: "div";
-  embedHtml: typeof Embed;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -6809,6 +4326,7 @@ export const PlasmicSqueezeVariant2 = Object.assign(
   {
     // Helper components rendering sub-elements
     desktop: makeNodeComponent("desktop"),
+    columns: makeNodeComponent("columns"),
     editableLogoLogo: makeNodeComponent("editableLogoLogo"),
     logo: makeNodeComponent("logo"),
     editImage53: makeNodeComponent("editImage53"),
@@ -6822,8 +4340,10 @@ export const PlasmicSqueezeVariant2 = Object.assign(
     text3: makeNodeComponent("text3"),
     editText3R: makeNodeComponent("editText3R"),
     form: makeNodeComponent("form"),
+    formField: makeNodeComponent("formField"),
     input: makeNodeComponent("input"),
     input2: makeNodeComponent("input2"),
+    button: makeNodeComponent("button"),
     squeezeC1Cta: makeNodeComponent("squeezeC1Cta"),
     text4: makeNodeComponent("text4"),
     text5: makeNodeComponent("text5"),
@@ -6878,137 +4398,6 @@ export const PlasmicSqueezeVariant2 = Object.assign(
     editText162: makeNodeComponent("editText162"),
     text17: makeNodeComponent("text17"),
     editText172: makeNodeComponent("editText172"),
-    mobile: makeNodeComponent("mobile"),
-    logo3: makeNodeComponent("logo3"),
-    editableLogoLogo2: makeNodeComponent("editableLogoLogo2"),
-    logo4: makeNodeComponent("logo4"),
-    editImage54: makeNodeComponent("editImage54"),
-    squeezeC2Thumbnail2: makeNodeComponent("squeezeC2Thumbnail2"),
-    squeezeC2H13: makeNodeComponent("squeezeC2H13"),
-    squeezeC2H14: makeNodeComponent("squeezeC2H14"),
-    iconValue4: makeNodeComponent("iconValue4"),
-    squeezeC2Icon12: makeNodeComponent("squeezeC2Icon12"),
-    squeezeC2Icon1Value12: makeNodeComponent("squeezeC2Icon1Value12"),
-    iconValue5: makeNodeComponent("iconValue5"),
-    squeezeC2Icon22: makeNodeComponent("squeezeC2Icon22"),
-    squeezeC2Icon1Value22: makeNodeComponent("squeezeC2Icon1Value22"),
-    iconValue6: makeNodeComponent("iconValue6"),
-    squeezeC2Icon32: makeNodeComponent("squeezeC2Icon32"),
-    squeezeC2Icon1Value32: makeNodeComponent("squeezeC2Icon1Value32"),
-    squeezeC2CtaH12: makeNodeComponent("squeezeC2CtaH12"),
-    squeezeC2CtaH22: makeNodeComponent("squeezeC2CtaH22"),
-    watchers2: makeNodeComponent("watchers2"),
-    squeezeC2Proof2: makeNodeComponent("squeezeC2Proof2"),
-    squeezeC2OfferH12: makeNodeComponent("squeezeC2OfferH12"),
-    squeezeC2OfferThumbnail2: makeNodeComponent("squeezeC2OfferThumbnail2"),
-    squeezeC2ValueH12: makeNodeComponent("squeezeC2ValueH12"),
-    squeezeC2ValueH22: makeNodeComponent("squeezeC2ValueH22"),
-    squeezeC2ValueH32: makeNodeComponent("squeezeC2ValueH32"),
-    logo2: makeNodeComponent("logo2"),
-    squeezeNav2: makeNodeComponent("squeezeNav2"),
-    squeezeC1H12: makeNodeComponent("squeezeC1H12"),
-    squeezeC1H22: makeNodeComponent("squeezeC1H22"),
-    form2: makeNodeComponent("form2"),
-    input3: makeNodeComponent("input3"),
-    squeezeC1Field12: makeNodeComponent("squeezeC1Field12"),
-    input4: makeNodeComponent("input4"),
-    squeezeC1Field22: makeNodeComponent("squeezeC1Field22"),
-    squeezeC1Cta2: makeNodeComponent("squeezeC1Cta2"),
-    textInput3: makeNodeComponent("textInput3"),
-    textInput4: makeNodeComponent("textInput4"),
-    squeezeC1Disclaimer2: makeNodeComponent("squeezeC1Disclaimer2"),
-    discoverbeautyfixmedspacomByHtmltodesignFreeVersion24042023190333Gmt4:
-      makeNodeComponent(
-        "discoverbeautyfixmedspacomByHtmltodesignFreeVersion24042023190333Gmt4"
-      ),
-    divlpPomRoot: makeNodeComponent("divlpPomRoot"),
-    divlpPomBlock11: makeNodeComponent("divlpPomBlock11"),
-    divlpPomBlock21: makeNodeComponent("divlpPomBlock21"),
-    divlpPositionedContent: makeNodeComponent("divlpPositionedContent"),
-    divlpPomBox32: makeNodeComponent("divlpPomBox32"),
-    divlpPomForm19: makeNodeComponent("divlpPomForm19"),
-    inputfirstname: makeNodeComponent("inputfirstname"),
-    divplaceholder: makeNodeComponent("divplaceholder"),
-    yourFirstName: makeNodeComponent("yourFirstName"),
-    inputlastname: makeNodeComponent("inputlastname"),
-    divplaceholder2: makeNodeComponent("divplaceholder2"),
-    yourLastName: makeNodeComponent("yourLastName"),
-    inputemail: makeNodeComponent("inputemail"),
-    divplaceholder3: makeNodeComponent("divplaceholder3"),
-    yourEmailAddress: makeNodeComponent("yourEmailAddress"),
-    inputphone: makeNodeComponent("inputphone"),
-    divplaceholder4: makeNodeComponent("divplaceholder4"),
-    yourPhoneNumber: makeNodeComponent("yourPhoneNumber"),
-    divcontainerQualification: makeNodeComponent("divcontainerQualification"),
-    yourQualification: makeNodeComponent("yourQualification"),
-    selectqualification: makeNodeComponent("selectqualification"),
-    div: makeNodeComponent("div"),
-    nurseRnOrNp: makeNodeComponent("nurseRnOrNp"),
-    buttonlpPomButton20: makeNodeComponent("buttonlpPomButton20"),
-    _continue: makeNodeComponent("_continue"),
-    divlpPomBox26: makeNodeComponent("divlpPomBox26"),
-    divlpPomImageContainer: makeNodeComponent("divlpPomImageContainer"),
-    _6D1D5E84CheckoutTrainingCenterPart1110El04G000000000000028Png:
-      makeNodeComponent(
-        "_6D1D5E84CheckoutTrainingCenterPart1110El04G000000000000028Png"
-      ),
-    divlpPomImageContainer2: makeNodeComponent("divlpPomImageContainer2"),
-    c510588BTrainingCenterGifPreview2Gif: makeNodeComponent(
-      "c510588BTrainingCenterGifPreview2Gif"
-    ),
-    divlpPomBox46: makeNodeComponent("divlpPomBox46"),
-    divlpPomImageContainer3: makeNodeComponent("divlpPomImageContainer3"),
-    d33EfddcPinkChecksvg: makeNodeComponent("d33EfddcPinkChecksvg"),
-    d33EfddcPinkChecksvg2: makeNodeComponent("d33EfddcPinkChecksvg2"),
-    learnFacialAnatomyBotulinumToxinScience: makeNodeComponent(
-      "learnFacialAnatomyBotulinumToxinScience"
-    ),
-    divlpPomBox52: makeNodeComponent("divlpPomBox52"),
-    divlpPomImageContainer4: makeNodeComponent("divlpPomImageContainer4"),
-    d33EfddcPinkChecksvg3: makeNodeComponent("d33EfddcPinkChecksvg3"),
-    d33EfddcPinkChecksvg4: makeNodeComponent("d33EfddcPinkChecksvg4"),
-    smallClassSizeWithDedicated11Support: makeNodeComponent(
-      "smallClassSizeWithDedicated11Support"
-    ),
-    divlpPomBox55: makeNodeComponent("divlpPomBox55"),
-    divlpPomImageContainer5: makeNodeComponent("divlpPomImageContainer5"),
-    d33EfddcPinkChecksvg5: makeNodeComponent("d33EfddcPinkChecksvg5"),
-    d33EfddcPinkChecksvg6: makeNodeComponent("d33EfddcPinkChecksvg6"),
-    strong: makeNodeComponent("strong"),
-    divlpPomImageContainer6: makeNodeComponent("divlpPomImageContainer6"),
-    _3628940ACheckoutTrainingCenterPart210El08G000000000000028Png:
-      makeNodeComponent(
-        "_3628940ACheckoutTrainingCenterPart210El08G000000000000028Png"
-      ),
-    divlpPomImageContainer7: makeNodeComponent("divlpPomImageContainer7"),
-    c38C71DdBeautyfixLogoFullWht105S00V000000000000028Png: makeNodeComponent(
-      "c38C71DdBeautyfixLogoFullWht105S00V000000000000028Png"
-    ),
-    getPricingDetails: makeNodeComponent("getPricingDetails"),
-    divlpPomImageContainer8: makeNodeComponent("divlpPomImageContainer8"),
-    _046F157ALogo250X104X01P04X01L000002028Png: makeNodeComponent(
-      "_046F157ALogo250X104X01P04X01L000002028Png"
-    ),
-    span: makeNodeComponent("span"),
-    submitToRequestAdditionalInformation: makeNodeComponent(
-      "submitToRequestAdditionalInformation"
-    ),
-    divlpPomBox33: makeNodeComponent("divlpPomBox33"),
-    p: makeNodeComponent("p"),
-    iAgreeToReceiveRecurringAutomatedMarketingTextMessagesEg: makeNodeComponent(
-      "iAgreeToReceiveRecurringAutomatedMarketingTextMessagesEg"
-    ),
-    cartRemindersAtThePhoneNumberProvidedConsentIsNotA: makeNodeComponent(
-      "cartRemindersAtThePhoneNumberProvidedConsentIsNotA"
-    ),
-    conditionToPurchaseMsgDataRatesMayApplyMsgFrequency: makeNodeComponent(
-      "conditionToPurchaseMsgDataRatesMayApplyMsgFrequency"
-    ),
-    variesReplyHelpForHelpAndStopToCancelViewOurPrivacy: makeNodeComponent(
-      "variesReplyHelpForHelpAndStopToCancelViewOurPrivacy"
-    ),
-    policyAndTermsOfService: makeNodeComponent("policyAndTermsOfService"),
-    embedHtml: makeNodeComponent("embedHtml"),
 
     // Metadata about props expected for PlasmicSqueezeVariant2
     internalVariantProps: PlasmicSqueezeVariant2__VariantProps,

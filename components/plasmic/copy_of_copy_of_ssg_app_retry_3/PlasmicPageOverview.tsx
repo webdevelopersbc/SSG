@@ -301,12 +301,10 @@ function PlasmicPageOverview__RenderFunc(props: {
   const new$Queries: Record<string, ReturnType<typeof usePlasmicDataOp>> = {
     page: usePlasmicDataOp(() => {
       return {
-        sourceId: "g2kPPaDE2d7MrKWxSfsPF6",
-        opId: "eb28aa43-cd91-48fc-afdf-ae170ba57e80",
-        userArgs: {
-          filters: [$ctx.params.slug]
-        },
-        cacheKey: `plasmic.$.eb28aa43-cd91-48fc-afdf-ae170ba57e80.$.`,
+        sourceId: "rgeC3gdZPKsM6rWvBzgeeg",
+        opId: "391b54da-0680-4fde-84c5-2516fba92fd5",
+        userArgs: {},
+        cacheKey: `plasmic.$.391b54da-0680-4fde-84c5-2516fba92fd5.$.`,
         invalidatedKeys: null,
         roleId: null
       };
